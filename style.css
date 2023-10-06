@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-image: url("logo_protech_consulting_75porcent.png");
+    background-image: url("imagens/logo_protech_consulting_75porcent.png");
     background: Cover;
     background-repeat: no-repeat;
     background-size: 61%;
@@ -18,11 +18,11 @@ body {
     background-color: #4F5F73;
 }
 
-section{
+section {
     display: flex;
 }
 
-header{
+header {
     top: 0;
     position: sticky;
 }
@@ -38,14 +38,14 @@ nav {
     border-radius: 20px;
 }
 
-nav a.links{
+nav a.links {
     font-size: 1.25em;
     transition: 0.25s;
     text-decoration: none;
     color: #F2F2F2;
 }
 
-nav a.links:hover{
+nav a.links:hover {
     transform: scale(1.10);
     cursor: pointer;
     text-decoration: underline;
@@ -54,7 +54,7 @@ nav a.links:hover{
 
 
 
-main#corpo_central{
+main#corpo_central {
     /* background-color: aqua; */
     margin-top: 60px;
     display: flex;
@@ -62,18 +62,18 @@ main#corpo_central{
     max-width: 60%;
 }
 
-main .valor_visao_missao{
+main .valor_visao_missao {
     display: flex;
     flex-direction: column;
     margin: 30px 0 100px;
 }
 
-main .valor_visao_missao h2{
+main .valor_visao_missao h2 {
     padding: 0 35px;
     font-size: 46px;
 }
 
-main .valor_visao_missao p{
+main .valor_visao_missao p {
     font-size: 18px;
     margin: 10px 0;
 }
@@ -92,7 +92,7 @@ p {
     color: #b0d1fd;
 }
 
-footer{
+footer {
     box-shadow: 0 0 15px 2px;
     background-color: #253140;
     padding: 60px 0;
@@ -107,12 +107,12 @@ footer div#afiliados {
     text-align: center;
 }
 
-footer div#afiliados h2{
+footer div#afiliados h2 {
     font-size: 2rem;
     font-family: 'Young Serif', serif
 }
 
-footer #campo_empresas_afiliadas{
+footer #campo_empresas_afiliadas {
     margin: 25px auto;
     width: 75%;
     background-color: #4F5F73;
@@ -122,26 +122,28 @@ footer #campo_empresas_afiliadas{
     flex-wrap: wrap;
 }
 
-div.empresa_afiliada{
+div.empresa_afiliada {
     margin: 20px auto;
     width: 280px;
     text-align: center;
     display: flex;
 }
 
-.empresa_afiliada p{
+.empresa_afiliada p {
     font-size: 1.6em;
     transition: 0.15s;
 }
 
-.empresa_afiliada p:hover{
+.empresa_afiliada p:hover {
     cursor: pointer;
     transform: scale(1.25);
     transition: 0.25s;
 }
+
 h2 {
     color: #F2F2F2;
 }
+
 footer #entre_em_contato {
     margin-top: 80px;
     text-align: center;
@@ -159,7 +161,7 @@ footer #contatos {
     text-align: center;
 }
 
-footer .nossos_contatos p{
+footer .nossos_contatos p {
     margin: 10px 20px;
 }
 
@@ -168,30 +170,32 @@ footer .nossos_contatos p{
 
 
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
 
-    body{
+    body {
         background-size: 50%;
     }
 
-    main#corpo_central{
+    main#corpo_central {
         max-width: 100%;
     }
 
-    footer div#afiliados h2{
+    footer div#afiliados h2 {
         font-size: 1.5em;
     }
 }
 
-@media only screen and (max-width: 500px){
-    section{
+@media only screen and (max-width: 500px) {
+
+    section {
         flex-wrap: wrap;
     }
-    header{
+
+    header {
         padding: 0;
     }
 
-    nav{
+    nav {
         max-width: 100%;
         border-radius: 0px;
         border: 0;
@@ -199,24 +203,24 @@ footer .nossos_contatos p{
         box-shadow: 0px 1px 10px;
     }
 
-    nav a{
+    nav a {
         border: 2px solid black;
         padding: 5px;
         background-color: rgba(202, 174, 137, 0.65);
     }
 
-    footer div#afiliados{
+    footer div#afiliados {
         width: 60%;
     }
 
-    footer div#afiliados h2{
+    footer div#afiliados h2 {
         font-size: 1.5em
     }
 }
 
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 420px) {
 
-    nav a.links{
+    nav a.links {
         font-size: 1em;
     }
 }
