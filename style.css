@@ -12,7 +12,11 @@ body {
     background-image: url("imagens/logo_protech_consulting_75porcent.png");
     background: Cover;
     background-repeat: no-repeat;
+<<<<<<< HEAD
     background-size: 41%;
+=======
+    background-size: 60%;
+>>>>>>> 61ffb6294aaefac03c850deaad3d1d07e3fab00b
     background-position: center;
     background-attachment: fixed;
     background-color: #141517;
@@ -32,6 +36,7 @@ header {
 
 
 nav {
+<<<<<<< HEAD
     z-index:1000;
     background-color: #10243b;
     /* max-width: 85%; */
@@ -40,9 +45,18 @@ nav {
     /* border: 4px solid black; */
     box-shadow: 0px 0px 10px;
     /* border-radius: 20px; */
+=======
+    background-color: #6f7d8d;
+    max-width: 85%;
+    display: flex;
+    padding: 15px 10px;
+    border-radius: 0px 0px 75px 75px;
+    box-shadow: 1px 1px 12px 3px;
+>>>>>>> 61ffb6294aaefac03c850deaad3d1d07e3fab00b
 }
 
 nav a.links {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.25em;
     transition: 0.25s;
     text-decoration: none;
@@ -59,7 +73,6 @@ nav a.links:hover {
 
 
 main#corpo_central {
-    /* background-color: aqua; */
     margin-top: 60px;
     display: flex;
     flex-direction: column;
@@ -78,6 +91,7 @@ main .valor_visao_missao h2 {
 }
 
 main .valor_visao_missao p {
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     margin: 10px 0;
 }
@@ -85,9 +99,8 @@ main .valor_visao_missao p {
 .descricao_valor_visao_missao {
     background-color: #141517a6;
     width: 85%;
-    /* border: 4px solid; */
     border-radius: 25px;
-    /* box-shadow: 3px 3px 1px; */
+    box-shadow: 0px 0px 6px 1px;
     padding: 25px;
     height: 100%;
     text-align: center;
@@ -107,8 +120,7 @@ footer {
 footer div#afiliados {
     width: 30%;
     padding: 25px 0;
-    /* background-color: hsl(190, 100%, 69%); */
-    /* border: solid 3px; */
+    box-shadow: 5px 5px 5px 5px;
     text-align: center;
 }
 
@@ -192,6 +204,10 @@ footer .nossos_contatos p {
         background-size: 50%;
     }
 
+    nav a.links {
+        text-decoration: underline;
+    }
+
     main#corpo_central {
         max-width: 100%;
     }
@@ -222,7 +238,11 @@ footer .nossos_contatos p {
     nav a {
         /* border: 2px solid black; */
         padding: 5px;
+<<<<<<< HEAD
         /* background-color: rgba(202, 174, 137, 0.65); */
+=======
+        background-color: rgb(39, 50, 65);
+>>>>>>> 61ffb6294aaefac03c850deaad3d1d07e3fab00b
     }
 
     footer div#afiliados {
