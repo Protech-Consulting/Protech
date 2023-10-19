@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0 auto;
     padding: 0;
@@ -56,12 +60,6 @@ nav a.links img{
     width: 15%;
 }
 
-
-
-
-/*cods a baixo copy */
-
-
 header {
     z-index: 1000;
     top: 0;
@@ -96,6 +94,35 @@ nav a.links:hover {
     cursor: pointer;
     text-decoration: underline;
     transition: 0.25s;
+}
+
+
+#equipe {
+    margin-top: 20px;
+    width: 80vh;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141517a5;
+    flex-direction: column;
+    border-radius: 50px;
+}
+
+h2#integrantes{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#equipe p {
+    margin: 5px;
+    font-size: 1.4em;
+}
+
+#equipe h5 {
+    margin: 15px 0 0;
+    color: red;
 }
 
 footer {
@@ -168,4 +195,55 @@ footer #contatos {
 footer .nossos_contatos p {
     margin: 10px 20px;
 }
+@media only screen and (max-width: 700px) {
 
+    body {
+        background-size: 50%;
+    }
+
+    main#corpo_central {
+        max-width: 100%;
+    }
+
+    footer div#afiliados h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    section {
+        flex-wrap: wrap;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    nav {
+        max-width: 100%;
+        border-radius: 0px;
+        border: 0;
+        box-shadow: 0px 1px 10px;
+    }
+
+    nav a.links {
+        text-decoration: underline;
+        padding: 5px
+    }
+
+    footer div#afiliados {
+        width: 60%;
+    }
+
+    footer div#afiliados h2 {
+        font-size: 1.5em
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    nav a.links {
+        font-size: 1em;
+    }
+}
