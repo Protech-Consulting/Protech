@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagens/icone_protech.png">
     <title>Protech Consulting</title>
 
 </head>
+
 <body id="home">
     <header>
-        <nav> 
-            <a href="logo" class="links"><img src="imagens/logo_protech_consulting_75porcent.png" alt="Logo"></a>
+        <nav>
+            <img src="imagens/logo_protech_consulting_75porcent.png" alt="Logo Empresa Protech Consulting" id="logo_nav">
             <a href="#home" class="links">Home</a>
             <a href="#visao" class="links">Visão</a>
             <a href="#valores" class="links">Valores</a>
@@ -20,9 +25,11 @@
         </nav>
     </header>
 
-    <section class="conteiner">
+    <section class="topico">
         <img src="imagens/img_test1.jpg" alt="foto de um escritorio">
-        <div class="text_capa"><h2>Protech Consulting</h2> </div>
+        <div class="titulo">
+            <h2>Protech Consulting</h2>
+        </div>
     </section>
     <div class="descricao" id="servicos">
         <p>Nossa missão é fornecer serviços de consultoria de TI de alta qualidade, impulsionando a excelência
@@ -36,9 +43,11 @@
             objetivo de melhorar a eficiência e os resultados em um ambiente altamente tecnológico.</p>
     </div>
 
-    <section class="conteiner" id="visao">
+    <section class="topico" id="visao">
         <img src="imagens/img_test2.jpg" alt="foto de um escritorio">
-        <div class="text_capa"><h2>Visão</h2> </div>
+        <div class="titulo">
+            <h2>Visão</h2>
+        </div>
     </section>
     <div class="descricao">
         <p>Nossa visão é ser líder na consultoria de TI na América Latina, oferecendo soluções práticas e
@@ -50,11 +59,13 @@
             excepcional e qualidade de serviço. </p>
     </div>
 
-    <section class="conteiner"  id="valores">
+    <section class="topico" id="valores">
         <img src="imagens/img_test4.jpg" alt="foto de um escritorio">
-        <div class="text_capa"><h2>Valores</h2> </div>
+        <div class="titulo">
+            <h2>Valores</h2>
+        </div>
     </section>
-    <div class="descricao_valor_visao_missao">
+    <div class="descricao">
         <p>➥ Qualidade;</p>
         <p>➥ Praticidade;</p>
         <p>➥ Integridade;</p>
@@ -69,9 +80,11 @@
         <p>➥ Responsabilidade com cliente.</p>
     </div>
 
-    <section class="conteiner" id="integrantes">
+    <section class="topico" id="integrantes">
         <img src="https://febracis.com/wp-content/uploads/2022/10/dicas-de-lideranca.jpg" alt="foto de um escritorio">
-        <div class="text_capa"><h2>INTEGRANTES</h2> </div>
+        <div class="titulo">
+            <h2>INTEGRANTES</h2>
+        </div>
     </section>
     <div id="equipe">
         <p>Akin Martimiano da Silva</p>
@@ -93,31 +106,29 @@
         <div id="campo_empresas_afiliadas">
 
             <div class="empresa_afiliada">
-               <a target="_blank" href="https://www.totvs.com/?utm_campaign=totvs-conv-aon-meio-nativa-black-friday-performance-max-rh&utm_source=google-performance-max&utm_medium=cpc&utm_term=black-friday-2023&utm_term=&utm_campaign=TOTVS_CONV_AON_MEIO_NATIVA_BLACK-FRIDAY-PERFORMANCE-MAX&utm_source=adwords&utm_medium=ppc&hsa_acc=5745705588&hsa_cam=20568313823&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwhL6pBhDjARIsAGx8D58EsrgKv4K8134q7nrXQDdmBbYibvW09mGQJitenZHTKYEnYSDbf7QaAkjoEALw_wcB">
-                <p>TOTVS</p>
-               </a>
+                <a target="_blank"
+                    href="https://www.totvs.com/?utm_campaign=totvs-conv-aon-meio-nativa-black-friday-performance-max-rh&utm_source=google-performance-max&utm_medium=cpc&utm_term=black-friday-2023&utm_term=&utm_campaign=TOTVS_CONV_AON_MEIO_NATIVA_BLACK-FRIDAY-PERFORMANCE-MAX&utm_source=adwords&utm_medium=ppc&hsa_acc=5745705588&hsa_cam=20568313823&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwhL6pBhDjARIsAGx8D58EsrgKv4K8134q7nrXQDdmBbYibvW09mGQJitenZHTKYEnYSDbf7QaAkjoEALw_wcB">
+                    TOTVS</a>
             </div>
-
             <div class="empresa_afiliada">
-                <a target="_blank" href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&rlz=1C1CHBD_pt-PTBR1070BR1071&oq=goo&gs_lcrp=EgZjaHJvbWUqEwgBEC4YgwEYxwEYsQMY0QMYgAQyBggAEEUYOTITCAEQLhiDARjHARixAxjRAxiABDINCAIQABiDARixAxiABDINCAMQABiDARixAxiABDIGCAQQRRhBMgYIBRBFGDwyBggGEEUYPDIGCAcQRRhB0gEINjQxMmowajSoAgCwAgA&sourceid=chrome&ie=UTF-8">
-            <p>Google</p></a>
+                <a target="_blank"
+                    href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&rlz=1C1CHBD_pt-PTBR1070BR1071&oq=goo&gs_lcrp=EgZjaHJvbWUqEwgBEC4YgwEYxwEYsQMY0QMYgAQyBggAEEUYOTITCAEQLhiDARjHARixAxjRAxiABDINCAIQABiDARixAxiABDINCAMQABiDARixAxiABDIGCAQQRRhBMgYIBRBFGDwyBggGEEUYPDIGCAcQRRhB0gEINjQxMmowajSoAgCwAgA&sourceid=chrome&ie=UTF-8">
+                    Google</a>
             </div>
-
             <div class="empresa_afiliada">
-                <a target="_blank" href="https://www.ibm.com/br-pt"><p>IBM</p> </a>
-                
+                <a target="_blank" href="https://www.ibm.com/br-pt">
+                    IBM</a>
             </div>
-
             <div class="empresa_afiliada">
-                <a target="_blank" href="https://www.jpmorgan.com.br/pt/about-us"><p>JPMorgan</p></a>
+                <a target="_blank" href="https://www.jpmorgan.com.br/pt/about-us">
+                    JPMorgan</a>
             </div>
-
             <div class="empresa_afiliada">
-                <p>Datacenter</p>
+                <a target="#" href="#">Datacenter</a>
             </div>
-
             <div class="empresa_afiliada">
-               <a target="_blank" href="https://www.dell.com/pt-br"><p>Dell</p></a> 
+                <a target="_blank" href="https://www.dell.com/pt-br">
+                    Dell</a>
             </div>
         </div>
 
@@ -145,7 +156,7 @@
         </div>
     </footer>
 
-    
+
 </body>
 
 </html>

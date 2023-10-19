@@ -7,7 +7,8 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-image: url("imagens/logo_protech_consulting_75porcent.png");
     background: Cover;
     background-repeat: no-repeat;
@@ -17,12 +18,13 @@ body{
     background-color: #141517;
 
 }
-p{
+
+p {
     color: #fff;
     text-align: center;
 }
 
-.conteiner{
+.topico {
     margin: auto;
     width: 100%;
     max-height: 350px;
@@ -31,14 +33,15 @@ p{
     margin-top: 40px;
     margin-bottom: 20px;
 }
-.conteiner img{
-    margin: auto;
-    width: 100%;
+
+.topico img {
+    width: 100vw;
     max-height: 350px;
     object-fit: cover;
     
 }
-.text_capa{
+
+.titulo {
     width: 100%;
     position: absolute;
     text-align: center;
@@ -47,18 +50,17 @@ p{
     bottom: 0px;
     
 }
-.descricao{
+
+.descricao {
     text-align: center;
     color: #fff;
     max-width: 60%;
     margin-top: 10px;
     margin-bottom: 10px;
-
+    font-family: 'Roboto', sans-serif;
 }
 
-nav a.links img{
-    width: 15%;
-}
+
 
 header {
     z-index: 1000;
@@ -66,10 +68,8 @@ header {
     position: sticky;
 }
 
-
-
 nav {
-    z-index:1000;
+    z-index: 1000;
     background-color: #10243b;
     display: flex;
     padding: 15px 0px;
@@ -78,6 +78,10 @@ nav {
     paddin: 15px 10px;
     border-radius: 0 0 75px 75px;
     box-shadow: 1px 1px 12px 3px; */
+}
+
+img#logo_nav {
+    width: 10vw;
 }
 
 nav a.links {
@@ -160,18 +164,20 @@ div.empresa_afiliada {
     display: flex;
 }
 
-.empresa_afiliada p {
+.empresa_afiliada a {
     font-size: 1.6em;
     transition: 0.15s;
+    color: #fff;
+    text-decoration: none;
 }
 
-.empresa_afiliada p:hover {
+.empresa_afiliada a:hover {
     cursor: pointer;
     transform: scale(1.25);
     transition: 0.25s;
 }
 
-h2 {
+#afiliados h2 {
     color: #F2F2F2;
 }
 
