@@ -1,14 +1,9 @@
-html {
-    scroll-behavior: smooth;
-}
-
 * {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
+body{
     background-image: url("imagens/logo_protech_consulting_75porcent.png");
     background: Cover;
     background-repeat: no-repeat;
@@ -16,12 +11,56 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-color: #141517;
+
+}
+p{
+    color: #fff;
+    text-align: center;
 }
 
-section {
-    min-height: 90vh;
-    display: flex;
+.conteiner{
+    margin: auto;
+    width: 100%;
+    max-height: 350px;
+    position: relative;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
+.conteiner img{
+    margin: auto;
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    
+}
+.text_capa{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    bottom: 0px;
+    
+}
+.descricao{
+    text-align: center;
+    color: #fff;
+    max-width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+nav a.links img{
+    width: 15%;
+}
+
+
+
+
+/*cods a baixo copy */
+
 
 header {
     z-index: 1000;
@@ -49,6 +88,7 @@ nav a.links {
     transition: 0.25s;
     text-decoration: none;
     color: #F2F2F2;
+
 }
 
 nav a.links:hover {
@@ -56,45 +96,6 @@ nav a.links:hover {
     cursor: pointer;
     text-decoration: underline;
     transition: 0.25s;
-}
-
-
-
-main#corpo_central {
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    max-width: 60%;
-}
-
-main .valor_visao_missao {
-    display: flex;
-    flex-direction: column;
-    margin: 30px 0 100px;
-}
-
-main .valor_visao_missao h2 {
-    padding: 0 35px;
-    font-size: 46px;
-}
-
-main .valor_visao_missao p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
-    margin: 10px 0;
-}
-
-.descricao_valor_visao_missao {
-    background-color: #141517a6;
-    width: 85%;
-    border-radius: 25px;
-    padding: 25px;
-    height: 100%;
-    text-align: center;
-}
-
-p {
-    color: #b0d1fd;
 }
 
 footer {
@@ -168,95 +169,3 @@ footer .nossos_contatos p {
     margin: 10px 20px;
 }
 
-.hidden{
-    opacity: 0;
-    filter: blur(15px);
-    transition: all 1.5s;
-}
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transition: all 1.5s;
-}
-
-#equipe {
-    margin-top: 20px;
-    width: 80vh;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(61, 103, 121);
-    flex-direction: column;
-}
-
-h2#integrantes{
-    text-align: center;
-    font-size: 2.5em;
-}
-
-#equipe p {
-    margin: 5px;
-    font-size: 1.4em;
-}
-
-#equipe h5 {
-    margin: 15px 0 0;
-}
-
-
-
-
-
-@media only screen and (max-width: 700px) {
-
-    body {
-        background-size: 50%;
-    }
-
-    main#corpo_central {
-        max-width: 100%;
-    }
-
-    footer div#afiliados h2 {
-        font-size: 1.5em;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-
-    section {
-        flex-wrap: wrap;
-    }
-
-    header {
-        padding: 0;
-    }
-
-    nav {
-        max-width: 100%;
-        border-radius: 0px;
-        border: 0;
-        box-shadow: 0px 1px 10px;
-    }
-
-    nav a.links {
-        text-decoration: underline;
-        padding: 5px
-    }
-
-    footer div#afiliados {
-        width: 60%;
-    }
-
-    footer div#afiliados h2 {
-        font-size: 1.5em
-    }
-}
-
-@media only screen and (max-width: 420px) {
-
-    nav a.links {
-        font-size: 1em;
-    }
-}
