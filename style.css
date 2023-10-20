@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-image: url("imagens/logo_protech_consulting_75porcent.png");
+    background-image: url("imagens/logo_de_fundo.png");
     background: Cover;
     background-repeat: no-repeat;
     background-size: 40%;
@@ -35,10 +35,9 @@ p {
 }
 
 .topico img {
-    width: 100vw;
-    max-height: 350px;
+    width: 100%;
+    max-height: 380px;
     object-fit: cover;
-    
 }
 
 .titulo {
@@ -52,15 +51,19 @@ p {
 }
 
 .descricao {
+    border-radius: 50px;
+    padding: 10px;
     text-align: center;
     color: #fff;
     max-width: 60%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 7vh;
     font-family: 'Roboto', sans-serif;
+    background-color: #141517a5;
 }
 
-
+.descricao p{
+    margin: 5px 0;
+}
 
 header {
     z-index: 1000;
@@ -101,9 +104,10 @@ nav a.links:hover {
 }
 
 
-#equipe {
-    margin-top: 20px;
-    width: 80vh;
+
+div#equipe {
+    margin-top: 35px;
+    width: 80%;
     height: 50vh;
     display: flex;
     align-items: center;
@@ -136,6 +140,8 @@ footer {
     margin-top: 60px;
 }
 
+
+
 footer div#afiliados {
     width: 30%;
     padding: 25px 0;
@@ -157,7 +163,7 @@ footer #campo_empresas_afiliadas {
     flex-wrap: wrap;
 }
 
-div.empresa_afiliada {
+.empresa_afiliada {
     margin: 20px auto;
     width: 280px;
     text-align: center;
@@ -180,6 +186,8 @@ div.empresa_afiliada {
 #afiliados h2 {
     color: #F2F2F2;
 }
+
+
 
 footer #entre_em_contato {
     margin-top: 80px;
@@ -207,20 +215,24 @@ footer .nossos_contatos p {
         background-size: 50%;
     }
 
-    main#corpo_central {
-        max-width: 100%;
+    nav img {
+        display: none;
+    }
+
+    .descricao {
+        max-width: 90%;
+    }
+
+    footer div#afiliados {
+        width: 60%;
     }
 
     footer div#afiliados h2 {
-        font-size: 1.5em;
+        font-size: 2.2em;
     }
 }
 
 @media only screen and (max-width: 500px) {
-
-    section {
-        flex-wrap: wrap;
-    }
 
     header {
         padding: 0;
@@ -230,7 +242,7 @@ footer .nossos_contatos p {
         max-width: 100%;
         border-radius: 0px;
         border: 0;
-        box-shadow: 0px 1px 10px;
+        box-shadow: 0px 3px 10px;
     }
 
     nav a.links {
@@ -243,11 +255,11 @@ footer .nossos_contatos p {
     }
 
     footer div#afiliados h2 {
-        font-size: 1.5em
+        font-size: 2.2em
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 440px) {
 
     nav a.links {
         font-size: 1em;
