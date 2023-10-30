@@ -117,10 +117,14 @@ div#equipe {
     border-radius: 50px;
 }
 
-h2#integrantes{
-    margin-top: 80px;
+#integrantes img {
+    object-fit: cover;
+    max-height: 380px;
+    object-position: 0 -70px;
+}
+
+#integrantes h2 {
     text-align: center;
-    font-size: 2.5em;
 }
 
 #equipe p {
