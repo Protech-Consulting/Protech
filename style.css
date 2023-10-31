@@ -24,6 +24,46 @@ p {
     text-align: center;
 }
 
+header {
+    z-index: 1000;
+    top: 0;
+    position: sticky;
+}
+
+nav {
+    z-index: 1000;
+    background-color: #10243b;
+    display: flex;
+    padding: 15px 0px;
+    box-shadow: 0 0 10px;
+    /* max-width: 85%;
+    paddin: 15px 10px;
+    border-radius: 0 0 75px 75px;
+    box-shadow: 1px 1px 12px 3px; */
+}
+
+img#logo_nav {
+    width: 10vw;
+}
+
+nav a.links {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
+    transition: 0.25s;
+    text-decoration: none;
+    color: #F2F2F2;
+
+}
+
+nav a.links:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 0.25s;
+}
+
+
+
 .topico {
     margin: auto;
     width: 100%;
@@ -65,57 +105,7 @@ p {
     margin: 5px 0;
 }
 
-header {
-    z-index: 1000;
-    top: 0;
-    position: sticky;
-}
 
-nav {
-    z-index: 1000;
-    background-color: #10243b;
-    display: flex;
-    padding: 15px 0px;
-    box-shadow: 0 0 10px;
-    /* max-width: 85%;
-    paddin: 15px 10px;
-    border-radius: 0 0 75px 75px;
-    box-shadow: 1px 1px 12px 3px; */
-}
-
-img#logo_nav {
-    width: 10vw;
-}
-
-nav a.links {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.25em;
-    transition: 0.25s;
-    text-decoration: none;
-    color: #F2F2F2;
-
-}
-
-nav a.links:hover {
-    transform: scale(1.10);
-    cursor: pointer;
-    text-decoration: underline;
-    transition: 0.25s;
-}
-
-
-
-div#equipe {
-    margin-top: 35px;
-    width: 80%;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #141517a5;
-    flex-direction: column;
-    border-radius: 50px;
-}
 
 #integrantes img {
     object-fit: cover;
@@ -127,15 +117,43 @@ div#equipe {
     text-align: center;
 }
 
-#equipe p {
-    margin: 5px;
-    font-size: 1.4em;
+#equipe {
+    padding: 10px;
+    margin-top: 60px;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+    /* background-color: #141517a5; */
+    border-radius: 50px;
+    flex-wrap: wrap;
 }
 
-#equipe h5 {
-    margin: 15px 0 0;
-    color: red;
+#equipe div.funcionarios {
+    margin: 15px 10px;
+    background-color: rgb(255, 0, 0);
+    height: 190px;
+    width: 380px;
 }
+
+.funcionarios .pessoa {
+    background-color: blue;
+    height: 145px;
+}
+
+.funcionarios .descricao_pessoa {
+    background-color: violet;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.descricao_pessoa p {
+    font-size: 1.8em;
+}
+
+
 
 footer {
     box-shadow: 0 0 15px 2px;
