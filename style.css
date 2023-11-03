@@ -17,7 +17,6 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-color: #141517;
-
 }
 
 p {
@@ -32,7 +31,7 @@ header {
     top: 0;
     position: sticky;
     z-index: 1;
-    background-color: #10243b;
+    background: linear-gradient(15deg, #10243b 35%, #1f3d5f);
     display: flex;
     padding: 15px 10px;
     box-shadow: 0 0 10px;
@@ -118,7 +117,8 @@ header a.links:hover {
 /* Estilização do Tópico 'Integrantes' */
 #integrantes img {
     object-fit: cover;
-    max-height: 380px;
+    /* width: 50%; */
+    height: 380px;
     object-position: 0 -70px;
 }
 
@@ -158,7 +158,7 @@ header a.links:hover {
 }
 
 .funcionarios .descricao_pessoa {
-    background-color: rgb(79, 100, 133);
+    background-color: #2a517e;
     height: 40px;
     display: flex;
     align-items: center;
@@ -309,6 +309,11 @@ footer .nossos_contatos p {
 
 
     /* Integrantes */
+
+    #integrantes img {
+        object-position: 0;
+    }
+
     #equipe div.funcionarios {
         /* margin: 15px 10px; */
         height: 270px;
@@ -328,7 +333,6 @@ footer .nossos_contatos p {
     footer div#afiliados {
         width: 60%;
     }
-
     
     footer div#afiliados h2 {
         font-size: 2.2em;
