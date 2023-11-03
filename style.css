@@ -299,6 +299,10 @@ footer .nossos_contatos p {
         display: none;
     }
 
+    header a.links {
+        margin: 0 20px;
+    }
+
     .descricao {
         max-width: 90%;
     }
@@ -331,6 +335,14 @@ footer .nossos_contatos p {
     }
 }
 
+@media only screen and (max-width: 600px) {
+
+header a.links {
+    margin: 0 12px;
+}
+
+}
+
 @media only screen and (max-width: 500px) {
 
     header {
@@ -345,8 +357,10 @@ footer .nossos_contatos p {
     }
 
     header a.links {
+        margin: 0 6px;
         text-decoration: underline;
-        padding: 5px
+        padding: 15px 0px;
+        font-size: 1.2em;
     }
 
     footer div#afiliados {
@@ -361,6 +375,9 @@ footer .nossos_contatos p {
 @media only screen and (max-width: 440px) {
 
     header a.links {
+        margin: 0 6px;
+        padding: 15px 0;
         font-size: 1em;
     }
+
 }
