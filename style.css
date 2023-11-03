@@ -1,3 +1,4 @@
+/* Estilização Geral Da Página */
 html {
     scroll-behavior: smooth;
 }
@@ -24,6 +25,9 @@ p {
     text-align: center;
 }
 
+
+
+/* Estilização do Menu */
 header {
     top: 0;
     position: sticky;
@@ -32,15 +36,10 @@ header {
     display: flex;
     padding: 15px 10px;
     box-shadow: 0 0 10px;
-    /* max-width: 85%;
-    padding: 15px 10px;
-    border-radius: 0 0 75px 75px;
-    box-shadow: 1px 1px 12px 3px; */
 }
 
 header div#caixa_logo {
     margin: 0;
-    /* background-color: rgba(248, 117, 161, 0.39); */
 }
 
 header img#logo_menu {
@@ -72,10 +71,11 @@ header a.links:hover {
 
 
 
+/* Estilização dos Tópicos (conteúdo da página) */
 .topico {
     margin: auto;
     width: 100%;
-    max-height: 350px;
+    height: 350px;
     position: relative;
     color: #fff;
     margin-top: 40px;
@@ -115,6 +115,7 @@ header a.links:hover {
 
 
 
+/* Estilização do Tópico 'Integrantes' */
 #integrantes img {
     object-fit: cover;
     max-height: 380px;
@@ -139,10 +140,10 @@ header a.links:hover {
 
 #equipe div.funcionarios {
     margin: 15px 10px;
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(255, 0, 0, 0.4);
     height: 245px;
     width: 380px;
-    /* border: solid 3px white; */
+    border: solid 3px #cdcdcd;
 }
 
 .funcionarios .pessoa {
@@ -158,10 +159,10 @@ header a.links:hover {
 
 .funcionarios .descricao_pessoa {
     background-color: rgb(79, 100, 133);
-    height: 45px;
+    height: 40px;
     display: flex;
     align-items: center;
-    border-top: solid 3px black;
+    border-top: solid 3px #cdcdcdaf;
 }
 
 .descricao_pessoa p {
@@ -170,14 +171,13 @@ header a.links:hover {
 
 
 
+/* Estilização do Rodapé */
 footer {
     box-shadow: 0 0 15px 2px;
     background-color: #0f1011;
     padding: 60px 0;
     margin-top: 60px;
 }
-
-
 
 footer div#afiliados {
     width: 30%;
@@ -225,7 +225,7 @@ footer #campo_empresas_afiliadas {
 }
 
 
-
+/* Estilização do 'Entre em contato!' (ainda no footer) */
 footer #entre_em_contato {
     margin-top: 80px;
     text-align: center;
@@ -251,7 +251,45 @@ footer .nossos_contatos p {
 
 
 
-@media only screen and (max-width: 700px) {
+/* Estilização para Responsividade da página */
+@media only screen and (max-width: 890px) {
+
+    header img#logo_menu {
+        width: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 865px) {
+
+    header img#logo_menu {
+        display: none;
+    }
+
+    header div#caixa_links {
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    /* Integrantes */
+    #equipe div.funcionarios {
+        /* margin: 15px 10px; */
+        height: 200px;
+        width: 321px;
+    }
+    
+    .funcionarios .pessoa {
+        height: 160px;
+    }
+    
+    .funcionarios .descricao_pessoa {
+        height: 35px;
+        font-size: 0.8em;
+    }
+
+}
+
+@media only screen and (max-width: 740px) {
 
     body {
         background-size: 50%;
@@ -265,10 +303,29 @@ footer .nossos_contatos p {
         max-width: 90%;
     }
 
+
+    /* Integrantes */
+    #equipe div.funcionarios {
+        /* margin: 15px 10px; */
+        height: 270px;
+        width: 450px;
+    }
+    
+    .funcionarios .pessoa {
+        height: 225px;
+    }
+    
+    .funcionarios .descricao_pessoa {
+        height: 40px;
+        font-size: 0.9em;
+    }
+    
+    /* Footer */
     footer div#afiliados {
         width: 60%;
     }
 
+    
     footer div#afiliados h2 {
         font-size: 2.2em;
     }
