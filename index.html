@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagens/icone_protech.png">
     <title>Protech Consulting</title>
+    <script defer src="script.js"></script>
 
 </head>
 
@@ -24,6 +25,33 @@
             <a href="#afiliados" class="links">Afiliados</a>
         </nav>
     </header>
+    <div id="contato">
+        <dialog id="favDialog">
+            <form method="dialog">
+              <section>
+                <p>
+                  <label for="favAnimal">Digite Seu Nome:</label>
+                  <input type="text">
+                  <input type="text" placeholder="Cep" id="textCep">
+                  <input type="button" value="OK" id="btnCep">
+                  <label id="lblRua">Rua: </label>
+                  <label id="lblBairro">Bairro: </label>
+                  <label id="lblCidade">Cidade: </label>
+                  <label id="lblEstado">Estado: </label>
+
+                </p>
+              </section>
+              <menu>
+                <button id="cancel" type="reset">Cancel</button>
+                <button type="submit">Confirm</button>
+              </menu>
+            </form>
+          </dialog>
+          
+          <menu>
+            <button id="updateDetails">Entre em Contato</button>
+          </menu>
+    </div>
 
     <section class="topico">
         <img src="imagens/imagem1_protech.jpg" alt="Planeta conectado com cidade brilhante na frente">
