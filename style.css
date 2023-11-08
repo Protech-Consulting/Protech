@@ -207,16 +207,17 @@ footer #campo_empresas_afiliadas {
     display: flex;
 }
 
-.empresa_afiliada a {
-    font-size: 1.6em;
+.empresa_afiliada img {
     transition: 0.15s;
-    color: #fff;
-    text-decoration: none;
 }
 
-.empresa_afiliada a:hover {
+.empresa_afiliada img {
+    width: 90%;
+}
+
+.empresa_afiliada img:hover {
     cursor: pointer;
-    transform: scale(1.25);
+    transform: scale(1.15);
     transition: 0.25s;
 }
 
