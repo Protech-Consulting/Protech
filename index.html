@@ -1,280 +1,190 @@
-html {
-    scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-* {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/icone_protech.png">
+    <title>Protech Consulting</title>
+    <script defer src="script.js"></script>
 
-dialog#favDialog {
-    width: 50%;
-    margin: 10% auto;
-    height: 30vw;
-}
-dialog#favDialog p {
-    color: black;
-    display: grid;
-}
-body {
-    background-image: url("imagens/logo_de_fundo.png");
-    background: Cover;
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: #141517;
+</head>
 
-}
+<body id="home">
+    <header>
+        <nav>
+            <img src="imagens/logo_de_fundo.png" alt="Logo Empresa Protech Consulting" id="logo_nav">
+            <a href="#home" class="links">Home</a>
+            <a href="#visao" class="links">Visão</a>
+            <a href="#valores" class="links">Valores</a>
+            <a href="#integrantes" class="links">Integrantes</a>
+            <a href="#afiliados" class="links">Afiliados</a>
+        </nav>
+    </header>
+    <div id="contato">
+        <dialog id="favDialog">
+            <form method="dialog">
+              <section>
+                <p>
+                  <label for="favAnimal">Digite Seu Nome:</label>
+                  <input type="text">
+                  <input type="text" placeholder="Cep" id="textCep">
+                  <input type="button" value="OK" id="btnCep">
+                  <label id="lblRua">Rua: </label>
+                  <label id="lblBairro">Bairro: </label>
+                  <label id="lblCidade">Cidade: </label>
+                  <label id="lblEstado">Estado: </label>
 
-p {
-    color: #fff;
-    text-align: center;
-}
+                </p>
+              </section>
+              <menu>
+                <button id="cancel" type="reset">Cancel</button>
+                <button type="submit">Confirm</button>
+              </menu>
+            </form>
+          </dialog>
+          
+          <menu>
+            <button id="updateDetails">Entre em Contato</button>
+          </menu>
+    </div>
 
-.topico {
-    margin: auto;
-    width: 100%;
-    max-height: 350px;
-    position: relative;
-    color: #fff;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
+    <section class="topico">
+        <img src="imagens/imagem1_protech.jpg" alt="Planeta conectado com cidade brilhante na frente">
+        <div class="titulo">
+            <h2>Protech Consulting</h2>
+        </div>
+    </section>
+    <div class="descricao" id="servicos">
+        <p>Nossa missão é fornecer serviços de consultoria de TI de alta qualidade, impulsionando a excelência
+            tecnológica para solucionar problemas de forma ágil e definitiva.</p>
+        <p>Valorizamos parcerias
+            duradouras baseadas na confiança e transparência, comprometendo-nos com o sucesso de nossos
+            clientes.
+            Além disso, acreditamos que nossos serviços não apenas satisfazem nossos clientes, mas também
+            impulsionam sua lucratividade. </p>
+        <p>Nossa empresa se compromete com a sustentabilidade, com o
+            objetivo de melhorar a eficiência e os resultados em um ambiente altamente tecnológico.</p>
+    </div>
 
-.topico img {
-    width: 100%;
-    max-height: 380px;
-    object-fit: cover;
-}
+    <section class="topico" id="visao">
+        <img src="imagens/imagem2_visao.jpeg" alt="Escritório com pessoas concentradas ao redor de uma mesa">
+        <div class="titulo">
+            <h2>Visão</h2>
+        </div>
+    </section>
+    <div class="descricao">
+        <p>Nossa visão é ser líder na consultoria de TI na América Latina, oferecendo soluções práticas e
+            inovadoras. Com uma equipe altamente capacitada e tecnologia de ponta, aspiramos rivalizar com as
+            maiores empresas do setor. </p>
+        <p>Priorizamos a sustentabilidade e somos reconhecidos por nossa
+            capacidade de impulsionar o desempenho e criar resultados para nossos clientes e nossa empresa. </p>
+        <p>Nosso objetivo é ser a principal escolha, superando as gigantes do mercado com atendimento
+            excepcional e qualidade de serviço. </p>
+    </div>
 
-.titulo {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    bottom: 0px;
-    
-}
+    <section class="topico" id="valores">
+        <img src="imagens/imagem3_valores.jpg" alt="Diversos funcionários de uma empresa sorrindo para a foto">
+        <div class="titulo">
+            <h2>Valores</h2>
+        </div>
+    </section>
+    <div class="descricao">
+        <p>➥ Qualidade;</p>
+        <p>➥ Praticidade;</p>
+        <p>➥ Integridade;</p>
+        <p>➥ Diversidade;</p>
+        <p>➥ Colaboração;</p>
+        <p>➥ Preço acessível;</p>
+        <p>➥ Sustentabilidade;</p>
+        <p>➥ Paixão por ajudar;</p>
+        <p>➥ Tecnologia avançada;</p>
+        <p>➥ Totalmente respeitosa;</p>
+        <p>➥ Suporte 100% ao cliente;</p>
+        <p>➥ Responsabilidade com cliente.</p>
+    </div>
 
-.descricao {
-    border-radius: 50px;
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-    max-width: 60%;
-    margin-top: 7vh;
-    font-family: 'Roboto', sans-serif;
-    background-color: #141517a5;
-}
-
-.descricao p{
-    margin: 5px 0;
-}
-
-header {
-    z-index: 1000;
-    top: 0;
-    position: sticky;
-}
-
-nav {
-    z-index: 1000;
-    background-color: #10243b;
-    display: flex;
-    padding: 15px 0px;
-    box-shadow: 0 0 10px;
-    /* max-width: 85%;
-    paddin: 15px 10px;
-    border-radius: 0 0 75px 75px;
-    box-shadow: 1px 1px 12px 3px; */
-}
-
-img#logo_nav {
-    width: 10vw;
-}
-
-nav a.links {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.25em;
-    transition: 0.25s;
-    text-decoration: none;
-    color: #F2F2F2;
-
-}
-
-nav a.links:hover {
-    transform: scale(1.10);
-    cursor: pointer;
-    text-decoration: underline;
-    transition: 0.25s;
-}
-
-
-
-div#equipe {
-    margin-top: 35px;
-    width: 80%;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #141517a5;
-    flex-direction: column;
-    border-radius: 50px;
-}
-
-#integrantes img {
-    object-fit: cover;
-    max-height: 380px;
-    object-position: 0 -70px;
-}
-
-#integrantes h2 {
-    text-align: center;
-}
-
-#equipe p {
-    margin: 5px;
-    font-size: 1.4em;
-}
-
-#equipe h5 {
-    margin: 15px 0 0;
-    color: red;
-}
-
-footer {
-    box-shadow: 0 0 15px 2px;
-    background-color: #0f1011;
-    padding: 60px 0;
-    margin-top: 60px;
-}
+    <section class="topico" id="integrantes">
+        <img src="imagens/imagem4_integrantes.jpg" alt="foto de um escritorio">
+        <div class="titulo">
+            <h2>Integrantes</h2>
+        </div>
+    </section>
+    <div id="equipe">
+        <p>Akin Martimiano da Silva</p>
+        <p>Gustavo Basilio</p>
+        <p>Gustavo Eric Alves Melo</p>
+        <p>Leonardo Rocha Constantino</p>
+        <p><b>Marcelo Soares Ferreira</b></p>
+        <p>Marcos Roberto Fernandes</p>
+        <p><b>Vitor Henrique De Barros Savioli</b></p>
+        <h5 id="desenvolvimento">Em desenvolvimento*</h5>
+    </div>
 
 
+    <footer>
+        <div id="afiliados">
+            <h2>AFILIADOS</h2>
+        </div>
 
-footer div#afiliados {
-    width: 30%;
-    padding: 25px 0;
-    text-align: center;
-}
+        <div id="campo_empresas_afiliadas">
 
-footer div#afiliados h2 {
-    font-size: 2rem;
-    font-family: 'Young Serif', serif
-}
+            <div class="empresa_afiliada">
+                <a target="_blank"
+                    href="https://www.totvs.com/?utm_campaign=totvs-conv-aon-meio-nativa-black-friday-performance-max-rh&utm_source=google-performance-max&utm_medium=cpc&utm_term=black-friday-2023&utm_term=&utm_campaign=TOTVS_CONV_AON_MEIO_NATIVA_BLACK-FRIDAY-PERFORMANCE-MAX&utm_source=adwords&utm_medium=ppc&hsa_acc=5745705588&hsa_cam=20568313823&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwhL6pBhDjARIsAGx8D58EsrgKv4K8134q7nrXQDdmBbYibvW09mGQJitenZHTKYEnYSDbf7QaAkjoEALw_wcB">
+                    TOTVS</a>
+            </div>
+            <div class="empresa_afiliada">
+                <a target="_blank"
+                    href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&rlz=1C1CHBD_pt-PTBR1070BR1071&oq=goo&gs_lcrp=EgZjaHJvbWUqEwgBEC4YgwEYxwEYsQMY0QMYgAQyBggAEEUYOTITCAEQLhiDARjHARixAxjRAxiABDINCAIQABiDARixAxiABDINCAMQABiDARixAxiABDIGCAQQRRhBMgYIBRBFGDwyBggGEEUYPDIGCAcQRRhB0gEINjQxMmowajSoAgCwAgA&sourceid=chrome&ie=UTF-8">
+                    Google</a>
+            </div>
+            <div class="empresa_afiliada">
+                <a target="_blank" href="https://www.ibm.com/br-pt">
+                    IBM</a>
+            </div>
+            <div class="empresa_afiliada">
+                <a target="_blank" href="https://www.jpmorgan.com.br/pt/about-us">
+                    JPMorgan</a>
+            </div>
+            <div class="empresa_afiliada">
+                <a target="#" href="#">Datacenter</a>
+            </div>
+            <div class="empresa_afiliada">
+                <a target="_blank" href="https://www.dell.com/pt-br">
+                    Dell</a>
+            </div>
+        </div>
 
-footer #campo_empresas_afiliadas {
-    margin: 25px auto;
-    width: 75%;
-    background-color: #10243b;
-    padding: 10px;
-    border-radius: 15px;
-    display: flex;
-    flex-wrap: wrap;
-}
+        <h3 id="entre_em_contato">Entre em contato!</h3>
+        <div id="contatos">
+            <div class="nossos_contatos">
+                <p>Celular (11) 91016-093</p>
+            </div>
 
-.empresa_afiliada {
-    margin: 20px auto;
-    width: 280px;
-    text-align: center;
-    display: flex;
-}
+            <div class="nossos_contatos">
+                <p>Telefone (11) 93060-5432</p>
+            </div>
 
-.empresa_afiliada a {
-    font-size: 1.6em;
-    transition: 0.15s;
-    color: #fff;
-    text-decoration: none;
-}
+            <div class="nossos_contatos">
+                <p>Email: consultoriaprotech@gmail.com</p>
+            </div>
 
-.empresa_afiliada a:hover {
-    cursor: pointer;
-    transform: scale(1.25);
-    transition: 0.25s;
-}
+            <div class="nossos_contatos">
+                <p>CNPJ 33.074.254/0001-03</p>
+            </div>
 
-#afiliados h2 {
-    color: #F2F2F2;
-}
+            <div class="nossos_contatos">
+                <p>CEP 03449-020</p>
+            </div>
+        </div>
+    </footer>
 
 
+</body>
 
-footer #entre_em_contato {
-    margin-top: 80px;
-    text-align: center;
-    color: #4971A6;
-    text-shadow: 2px 2px 5px black;
-}
-
-footer #contatos {
-    background-color: #10243b;
-    border-radius: 15px;
-    margin: 10px auto;
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    text-align: center;
-}
-
-footer .nossos_contatos p {
-    margin: 10px 20px;
-}
-@media only screen and (max-width: 700px) {
-
-    body {
-        background-size: 50%;
-    }
-
-    nav img {
-        display: none;
-    }
-
-    .descricao {
-        max-width: 90%;
-    }
-
-    footer div#afiliados {
-        width: 60%;
-    }
-
-    footer div#afiliados h2 {
-        font-size: 2.2em;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-
-    header {
-        padding: 0;
-    }
-
-    nav {
-        max-width: 100%;
-        border-radius: 0px;
-        border: 0;
-        box-shadow: 0px 3px 10px;
-    }
-
-    nav a.links {
-        text-decoration: underline;
-        padding: 5px
-    }
-
-    footer div#afiliados {
-        width: 60%;
-    }
-
-    footer div#afiliados h2 {
-        font-size: 2.2em
-    }
-}
-
-@media only screen and (max-width: 440px) {
-
-    nav a.links {
-        font-size: 1em;
-    }
-}
+</html>
