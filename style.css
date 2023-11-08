@@ -1,3 +1,4 @@
+/* Estilização Geral Da Página */
 html {
     scroll-behavior: smooth;
 }
@@ -16,7 +17,6 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-color: #141517;
-
 }
 
 p {
@@ -24,10 +24,57 @@ p {
     text-align: center;
 }
 
+
+
+/* Estilização do Menu */
+header {
+    top: 0;
+    position: sticky;
+    z-index: 1;
+    background: linear-gradient(15deg, #10243b 35%, #1f3d5f);
+    display: flex;
+    padding: 15px 10px;
+    box-shadow: 0 0 10px;
+}
+
+header div#caixa_logo {
+    margin: 0;
+}
+
+header img#logo_menu {
+    width: 150px;
+}
+
+header div#caixa_links {
+    margin: 0 0 0 auto;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 5px;
+}
+
+header a.links {
+    margin: 0 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: #F2F2F2;
+    transition: transform 0.25s;
+}
+
+header a.links:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.15);
+    transition: transform 0.25s;
+}
+
+
+
+/* Estilização dos Tópicos (conteúdo da página) */
 .topico {
     margin: auto;
     width: 100%;
-    max-height: 350px;
+    height: 350px;
     position: relative;
     color: #fff;
     margin-top: 40px;
@@ -36,7 +83,7 @@ p {
 
 .topico img {
     width: 100%;
-    max-height: 380px;
+    height: 380px;
     object-fit: cover;
 }
 
@@ -61,65 +108,17 @@ p {
     background-color: #141517a5;
 }
 
-.descricao p{
+.descricao p {
     margin: 5px 0;
 }
 
-header {
-    z-index: 1000;
-    top: 0;
-    position: sticky;
-}
-
-nav {
-    z-index: 1000;
-    background-color: #10243b;
-    display: flex;
-    padding: 15px 0px;
-    box-shadow: 0 0 10px;
-    /* max-width: 85%;
-    paddin: 15px 10px;
-    border-radius: 0 0 75px 75px;
-    box-shadow: 1px 1px 12px 3px; */
-}
-
-img#logo_nav {
-    width: 10vw;
-}
-
-nav a.links {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.25em;
-    transition: 0.25s;
-    text-decoration: none;
-    color: #F2F2F2;
-
-}
-
-nav a.links:hover {
-    transform: scale(1.10);
-    cursor: pointer;
-    text-decoration: underline;
-    transition: 0.25s;
-}
 
 
-
-div#equipe {
-    margin-top: 35px;
-    width: 80%;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #141517a5;
-    flex-direction: column;
-    border-radius: 50px;
-}
-
+/* Estilização do Tópico 'Integrantes' */
 #integrantes img {
     object-fit: cover;
-    max-height: 380px;
+    /* width: 50%; */
+    height: 380px;
     object-position: 0 -70px;
 }
 
@@ -127,24 +126,58 @@ div#equipe {
     text-align: center;
 }
 
-#equipe p {
-    margin: 5px;
-    font-size: 1.4em;
+#equipe {
+    padding: 10px;
+    margin-top: 60px;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141517a5;
+    border-radius: 50px;
+    flex-wrap: wrap;
 }
 
-#equipe h5 {
-    margin: 15px 0 0;
-    color: red;
+#equipe div.funcionarios {
+    margin: 15px 10px;
+    background-color: rgba(255, 0, 0, 0.4);
+    height: 245px;
+    width: 380px;
+    border: solid 3px #cdcdcd;
 }
 
+.funcionarios .pessoa {
+    height: 200px;
+}
+
+.pessoa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -0 0px;
+}
+
+.funcionarios .descricao_pessoa {
+    background-color: #2a517e;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-top: solid 3px #cdcdcdaf;
+}
+
+.descricao_pessoa p {
+    font-size: 1.8em;
+}
+
+
+
+/* Estilização do Rodapé */
 footer {
     box-shadow: 0 0 15px 2px;
     background-color: #0f1011;
     padding: 60px 0;
     margin-top: 60px;
 }
-
-
 
 footer div#afiliados {
     width: 30%;
@@ -192,7 +225,7 @@ footer #campo_empresas_afiliadas {
 }
 
 
-
+/* Estilização do 'Entre em contato!' (ainda no footer) */
 footer #entre_em_contato {
     margin-top: 80px;
     text-align: center;
@@ -213,27 +246,105 @@ footer #contatos {
 footer .nossos_contatos p {
     margin: 10px 20px;
 }
-@media only screen and (max-width: 700px) {
+
+
+
+
+
+/* Estilização para Responsividade da página */
+@media only screen and (max-width: 890px) {
+
+    header img#logo_menu {
+        width: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 865px) {
+
+    header img#logo_menu {
+        display: none;
+    }
+
+    header div#caixa_links {
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    /* Integrantes */
+    #equipe div.funcionarios {
+        /* margin: 15px 10px; */
+        height: 200px;
+        width: 321px;
+    }
+    
+    .funcionarios .pessoa {
+        height: 160px;
+    }
+    
+    .funcionarios .descricao_pessoa {
+        height: 35px;
+        font-size: 0.8em;
+    }
+
+}
+
+@media only screen and (max-width: 740px) {
 
     body {
         background-size: 50%;
     }
 
-    nav img {
+    header img {
         display: none;
+    }
+
+    header a.links {
+        margin: 0 20px;
     }
 
     .descricao {
         max-width: 90%;
     }
 
+
+    /* Integrantes */
+
+    #integrantes img {
+        object-position: 0;
+    }
+
+    #equipe div.funcionarios {
+        /* margin: 15px 10px; */
+        height: 270px;
+        width: 450px;
+    }
+    
+    .funcionarios .pessoa {
+        height: 225px;
+    }
+    
+    .funcionarios .descricao_pessoa {
+        height: 40px;
+        font-size: 0.9em;
+    }
+    
+    /* Footer */
     footer div#afiliados {
         width: 60%;
     }
-
+    
     footer div#afiliados h2 {
         font-size: 2.2em;
     }
+}
+
+@media only screen and (max-width: 600px) {
+
+header a.links {
+    margin: 0 12px;
+}
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -242,16 +353,18 @@ footer .nossos_contatos p {
         padding: 0;
     }
 
-    nav {
+    header {
         max-width: 100%;
         border-radius: 0px;
         border: 0;
         box-shadow: 0px 3px 10px;
     }
 
-    nav a.links {
+    header a.links {
+        margin: 0 6px;
         text-decoration: underline;
-        padding: 5px
+        padding: 15px 0px;
+        font-size: 1.2em;
     }
 
     footer div#afiliados {
@@ -265,7 +378,10 @@ footer .nossos_contatos p {
 
 @media only screen and (max-width: 440px) {
 
-    nav a.links {
+    header a.links {
+        margin: 0 6px;
+        padding: 15px 0;
         font-size: 1em;
     }
+
 }
