@@ -147,18 +147,18 @@ header a.links:hover {
     text-align: center; /* Em caso de não haver imagem, o alt aparece no meio*/
 }
 
-.funcionarios .pessoa {
+.funcionarios .imagem_integrantes {
     height: 200px;
 }
 
-.pessoa img {
+.imagem_integrantes img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: -0 0px;
 }
 
-.funcionarios .descricao_pessoa {
+.funcionarios .nome_integrantes {
     background-color: #2a517e;
     height: 40px;
     display: flex;
@@ -166,8 +166,12 @@ header a.links:hover {
     border-top: solid 3px #cdcdcdaf;
 }
 
-.descricao_pessoa p {
+.nome_integrantes p {
     font-size: 1.8em;
+}
+
+.nome_gerente p {
+    font-weight: bold;
 }
 
 
