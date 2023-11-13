@@ -1,32 +1,32 @@
-var updateButton = document.getElementById("updateDetails");
-    var cancelButton = document.getElementById("cancel");
-    var favDialog = document.getElementById("favDialog");
-    var btCep = document.getElementById("btnCep");
+var entreEmContato = document.getElementById("botao_contato_dialog");
+var botaoCancelar = document.getElementById("cancelar");
+var dialog_contato = document.getElementById("dialog_contato");
+var botao_cep = document.getElementById("botao_cep");
 
-    // O botão Update abre uma Dialog (quase como um pop-up)
-    updateButton.addEventListener("click", function () {
-      favDialog.showModal();
-    });
-    btCep.addEventListener("click",function(){
-        let txtCep = document.getElementById("textCep") // Cep Digitado
-        let url = `https://viacep.com.br/ws/${txtCep.value}/json/`
-        var rua = document.getElementById("lblRua");
-        var bairro = document.getElementById("lblBairro");
-        var cidade = document.getElementById("lblCidade");
-        var estado = document.getElementById("lblEstado");
+// A var 'entreEmContato' abre uma Dialog (quase como um pop-up)
+entreEmContato.addEventListener("click", function () {
+    dialog_contato.showModal();
+});
+botao_cep.addEventListener("click", function () {
+    let cep_usuario = document.getElementById("cep_usuario") // Cep Digitado pelo usuário
+    let url = `https://viacep.com.br/ws/${cep_usuario.value}/json/` // Valida o CEP digitado
+    var rua = document.getElementById("label_rua");
+    var bairro = document.getElementById("label_bairro");
+    var cidade = document.getElementById("label_cidade");
+    var estado = document.getElementById("label_estado");
 
-        fetch(url).then(function(response){
-            response.json().then(function(data){
-                rua.innerText = data.logradouro
-                bairro.innerText = data.bairro
-                cidade.innerText = data.localidade
-                estado.innerText = data.uf
-                console.log(data)
-            });
+    fetch(url).then(function (response) { // Que que é fetch?? Then?????
+        response.json().then(function (data) { // Reponder Jonshon? que isso?
+            rua.innerText = data.logradouro
+            bairro.innerText = data.bairro // pra que serve isso tudo?
+            cidade.innerText = data.localidade
+            estado.innerText = data.uf
+            console.log(data) // daonde vem essa data?
         });
     });
+});
 
-    // O botão cancelButtom fecha uma Dialog
-    cancelButton.addEventListener("click", function () {
-      favDialog.close();
-    });
+// O botão 'botaocancelar' fecha a Dialog
+botaoCancelar.addEventListener("click", function () {
+    dialog_contato.close();
+});

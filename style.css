@@ -71,17 +71,48 @@ header a.links:hover {
 
 
 /* Entre em Contato */
-dialog#favDialog {
+dialog#dialog_contato {
     width: 50%;
     margin: 10% auto;
     height: 30vw;
+    
 }
-dialog#favDialog p {
+
+dialog#dialog_contato form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(148, 185, 233);
+    /* Provisório: */
+    padding-top: 35px;
+}
+
+dialog#dialog_contato p {
     color: black;
     display: grid;
 }
 
+dialog#dialog_contato menu {
+    margin: 15px auto;
+}
 
+dialog#dialog_contato menu button {
+    margin: 0 10px;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+#contato {
+    position: fixed;
+    bottom: 60px;
+    right: 55px;
+    z-index: 1;
+}
+
+#botao_contato_dialog {
+    padding: 10px;
+    font-size: 1.2em;
+}
 
 /* Estilização dos Tópicos (conteúdo da página) */
 .topico {
@@ -130,7 +161,6 @@ dialog#favDialog p {
 /* Estilização do Tópico 'Integrantes' */
 #integrantes img {
     object-fit: cover;
-    /* width: 50%; */
     height: 380px;
     object-position: 0 -70px;
 }
@@ -297,11 +327,11 @@ footer .nossos_contatos p {
         width: 321px;
     }
     
-    .funcionarios .pessoa {
+    .funcionarios .imagem_integrantes {
         height: 160px;
     }
     
-    .funcionarios .descricao_pessoa {
+    .funcionarios .nome_integrantes {
         height: 35px;
         font-size: 0.8em;
     }
@@ -339,11 +369,11 @@ footer .nossos_contatos p {
         width: 450px;
     }
     
-    .funcionarios .pessoa {
+    .funcionarios .imagem_integrantes {
         height: 225px;
     }
     
-    .funcionarios .descricao_pessoa {
+    .funcionarios .nome_integrantes {
         height: 40px;
         font-size: 0.9em;
     }

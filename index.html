@@ -29,29 +29,29 @@
     </header>
 
     <div id="contato">
-        <dialog id="favDialog">
+        <dialog id="dialog_contato">
             <form method="dialog">
                 <section>
                     <p>
-                        <label for="favAnimal">Digite Seu Nome:</label>
-                        <input type="text">
-                        <input type="text" placeholder="Cep" id="textCep">
-                        <input type="button" value="OK" id="btnCep">
-                        <label id="lblRua">Rua: </label>
-                        <label id="lblBairro">Bairro: </label>
-                        <label id="lblCidade">Cidade: </label>
-                        <label id="lblEstado">Estado: </label>
+                        <label for="favAnimal">Insira as informações a seguir:</label>
+                        <input type="text" placeholder="Digite seu nome">
+                        <input type="text" placeholder="Digite seu CEP" id="cep_usuario">
+                        <input type="button" value="Checar" id="botao_cep">
+                        <label id="label_rua">Rua: </label>
+                        <label id="label_bairro">Bairro: </label>
+                        <label id="label_cidade">Cidade: </label>
+                        <label id="label_estado">Estado: </label>
                     </p>
                 </section>
                 <menu>
-                    <button id="cancel" type="reset">Cancel</button>
-                    <button type="submit">Confirm</button>
+                    <button id="cancelar" type="reset">Cancelar</button>
+                    <button type="submit">Confirmar</button>
                 </menu>
             </form>
         </dialog>
-        <menu>
-            <button id="updateDetails">Entre em Contato</button>
-        </menu>
+        <div id="entrar_em_contato">
+            <button id="botao_contato_dialog">Contato</button>
+        </div>
     </div>
 
     <section class="topico">
