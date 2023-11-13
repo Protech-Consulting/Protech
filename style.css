@@ -70,6 +70,19 @@ header a.links:hover {
 
 
 
+/* Entre em Contato */
+dialog#favDialog {
+    width: 50%;
+    margin: 10% auto;
+    height: 30vw;
+}
+dialog#favDialog p {
+    color: black;
+    display: grid;
+}
+
+
+
 /* Estilização dos Tópicos (conteúdo da página) */
 .topico {
     margin: auto;
