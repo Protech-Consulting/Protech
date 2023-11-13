@@ -140,10 +140,11 @@ header a.links:hover {
 
 #equipe div.funcionarios {
     margin: 15px 10px;
-    background-color: rgba(255, 0, 0, 0.4);
+    background-color: rgba(255, 0, 0, 0.7);
     height: 245px;
     width: 380px;
     border: solid 3px #cdcdcd;
+    text-align: center; /* Em caso de não haver imagem, o alt aparece no meio*/
 }
 
 .funcionarios .pessoa {
