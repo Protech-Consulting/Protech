@@ -30,7 +30,7 @@
 
     <div id="contato">
         <dialog id="dialog_contato">
-            <form method="dialog">
+            <form method="post">
                 <section>
                     <p>
                         <label for="favAnimal">Insira as informações a seguir:</label>
@@ -45,13 +45,14 @@
                 </section>
                 <menu>
                     <button id="cancelar" type="reset">Cancelar</button>
-                    <button type="submit">Confirmar</button>
+                    <input type="button" id="confirmar" value="Confirmar">
                 </menu>
             </form>
-        </dialog>
-        <div id="entrar_em_contato">
-            <button id="botao_contato_dialog">Contato</button>
-        </div>
+          </dialog>
+          
+          <menu>
+            <button id="botao_contato_dialog">Entre em Contato</button>
+          </menu>
     </div>
 
     <section class="topico">
