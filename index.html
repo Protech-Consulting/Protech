@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,52 +9,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagens/icone_protech.png">
+    <script src="script.js" defer></script>
     <title>Protech Consulting</title>
-    <script defer src="script.js"></script>
 
 </head>
 
 <body id="home">
     <header>
-        <nav>
-            <img src="imagens/logo_de_fundo.png" alt="Logo Empresa Protech Consulting" id="logo_nav">
+        <div id="caixa_logo">
+            <img src="imagens/logo_de_fundo.png" alt="Logo Empresa Protech Consulting" id="logo_menu">
+        </div>
+        <div id="caixa_links">
             <a href="#home" class="links">Home</a>
             <a href="#visao" class="links">Visão</a>
             <a href="#valores" class="links">Valores</a>
             <a href="#integrantes" class="links">Integrantes</a>
             <a href="#afiliados" class="links">Afiliados</a>
-        </nav>
+        </div>
     </header>
-    <div id="contato">
-        <dialog id="favDialog">
-            <form method="dialog">
-              <section>
-                <p>
-                  <label for="favAnimal">Digite Seu Nome:</label>
-                  <input type="text">
-                  <input type="text" placeholder="Cep" id="textCep">
-                  <input type="button" value="OK" id="btnCep">
-                  <label id="lblRua">Rua: </label>
-                  <label id="lblBairro">Bairro: </label>
-                  <label id="lblCidade">Cidade: </label>
-                  <label id="lblEstado">Estado: </label>
 
-                </p>
-              </section>
-              <menu>
-                <button id="cancel" type="reset">Cancel</button>
-                <button type="submit">Confirm</button>
-              </menu>
+    <div id="contato">
+        <dialog id="dialog_contato">
+            <form method="dialog">
+                <section>
+                    <p>
+                        <label for="favAnimal">Insira as informações a seguir:</label>
+                        <input type="text" placeholder="Digite seu nome">
+                        <input type="text" placeholder="Digite seu CEP" id="cep_usuario">
+                        <input type="button" value="Checar" id="botao_cep">
+                        <label id="label_rua">Rua: </label>
+                        <label id="label_bairro">Bairro: </label>
+                        <label id="label_cidade">Cidade: </label>
+                        <label id="label_estado">Estado: </label>
+                    </p>
+                </section>
+                <menu>
+                    <button id="cancelar" type="reset">Cancelar</button>
+                    <button type="submit">Confirmar</button>
+                </menu>
             </form>
-          </dialog>
-          
-          <menu>
-            <button id="updateDetails">Entre em Contato</button>
-          </menu>
+        </dialog>
+        <div id="entrar_em_contato">
+            <button id="botao_contato_dialog">Contato</button>
+        </div>
     </div>
 
     <section class="topico">
-        <img src="imagens/imagem1_protech.jpg" alt="Planeta conectado com cidade brilhante na frente">
+        <img src="imagens/imagem1_protech.jpg" alt="Escritório moderno com diversas pessoas trabalhando em macbooks">
         <div class="titulo">
             <h2>Protech Consulting</h2>
         </div>
@@ -72,7 +73,7 @@
     </div>
 
     <section class="topico" id="visao">
-        <img src="imagens/imagem2_visao.jpeg" alt="Escritório com pessoas concentradas ao redor de uma mesa">
+        <img src="imagens/imagem2_visao.jpeg" alt="Planeta conectado com cidade brilhante na frente">
         <div class="titulo">
             <h2>Visão</h2>
         </div>
@@ -88,7 +89,7 @@
     </div>
 
     <section class="topico" id="valores">
-        <img src="imagens/imagem3_valores.jpg" alt="Diversos funcionários de uma empresa sorrindo para a foto">
+        <img src="imagens/imagem3_valores.jpg" alt="Escritório com pessoas concentradas ao redor de uma mesa">
         <div class="titulo">
             <h2>Valores</h2>
         </div>
@@ -109,20 +110,75 @@
     </div>
 
     <section class="topico" id="integrantes">
-        <img src="imagens/imagem4_integrantes.jpg" alt="foto de um escritorio">
+        <img src="imagens/imagem4_integrantes.jpg" alt="Diversos funcionários de uma empresa sorrindo para a foto">
         <div class="titulo">
             <h2>Integrantes</h2>
         </div>
     </section>
     <div id="equipe">
-        <p>Akin Martimiano da Silva</p>
+        <div class="funcionarios">
+            <div class="imagem_integrantes">
+                <img src="imagens/integrantes/Akin_Martimiano.png" alt="Foto do Akin Martimiano">
+            </div>
+            <div class="nome_integrantes">
+                <p>Akin Martimiano</p>
+            </div>
+        </div>
+        <div class="funcionarios">
+            <div class="imagem_integrantes">
+                <img src="imagens/integrantes/Gustavo_Basilio.png" alt="Foto do Gustavo Basilio">
+            </div>
+            <div class="nome_integrantes">
+                <p>Gustavo Basilio</p>
+            </div>
+        </div>
+        <div class="funcionarios">
+            <div class="imagem_integrantes">
+                <img src="imagens/integrantes/Gustavo_Eric.png" alt="Foto do Gustavo Eric">
+            </div>
+            <div class="nome_integrantes">
+                <p>Gustavo Eric</p>
+            </div>
+        </div>
+        <div class="funcionarios">
+            <div class="imagem_integrantes">
+                <img src="imagens/integrantes/Leonardo_Rocha.png" alt="Foto do Leonardo Rocha">
+            </div>
+            <div class="nome_integrantes">
+                <p>Leonardo Rocha</p>
+            </div>
+        </div>
+        <div class="funcionarios">
+            <div class="imagem_integrantes">
+                <img src="imagens/integrantes/Marcelo_Soares.png" alt="Foto do Marcelo Soares">
+            </div>
+            <div class="nome_integrantes nome_gerente">
+                <p>Marcelo Soares</p>
+            </div>
+        </div>
+        <div class="funcionarios">
+            <div class="imagem_integrantes">
+                <img src="imagens/integrantes/Marcos_Roberto.png" alt="Foto do Marcos Roberto">
+            </div>
+            <div class="nome_integrantes">
+                <p>Marcos Roberto</p>
+            </div>
+        </div>
+        <div class="funcionarios">
+            <div class="imagem_integrantes">
+                <img src="imagens/integrantes/Vitor_Henrique.png" alt="Foto do Vitor Henrique">
+            </div>
+            <div class="nome_integrantes nome_gerente">
+                <p>Vitor Henrique</p>
+            </div>
+        </div>
+        <!-- <p>Akin Martimiano da Silva</p>
         <p>Gustavo Basilio</p>
         <p>Gustavo Eric Alves Melo</p>
         <p>Leonardo Rocha Constantino</p>
         <p><b>Marcelo Soares Ferreira</b></p>
         <p>Marcos Roberto Fernandes</p>
-        <p><b>Vitor Henrique De Barros Savioli</b></p>
-        <h5 id="desenvolvimento">Em desenvolvimento*</h5>
+        <p><b>Vitor Henrique De Barros Savioli</b></p> -->
     </div>
 
 
@@ -134,29 +190,28 @@
         <div id="campo_empresas_afiliadas">
 
             <div class="empresa_afiliada">
-                <a target="_blank"
-                    href="https://www.totvs.com/?utm_campaign=totvs-conv-aon-meio-nativa-black-friday-performance-max-rh&utm_source=google-performance-max&utm_medium=cpc&utm_term=black-friday-2023&utm_term=&utm_campaign=TOTVS_CONV_AON_MEIO_NATIVA_BLACK-FRIDAY-PERFORMANCE-MAX&utm_source=adwords&utm_medium=ppc&hsa_acc=5745705588&hsa_cam=20568313823&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwhL6pBhDjARIsAGx8D58EsrgKv4K8134q7nrXQDdmBbYibvW09mGQJitenZHTKYEnYSDbf7QaAkjoEALw_wcB">
-                    TOTVS</a>
+                <a target="_blank" href="https://www.totvs.com">
+                    <img src="imagens/afiliados/totvs.png" alt="Logo da TOTVS"></a>
             </div>
             <div class="empresa_afiliada">
-                <a target="_blank"
-                    href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&rlz=1C1CHBD_pt-PTBR1070BR1071&oq=goo&gs_lcrp=EgZjaHJvbWUqEwgBEC4YgwEYxwEYsQMY0QMYgAQyBggAEEUYOTITCAEQLhiDARjHARixAxjRAxiABDINCAIQABiDARixAxiABDINCAMQABiDARixAxiABDIGCAQQRRhBMgYIBRBFGDwyBggGEEUYPDIGCAcQRRhB0gEINjQxMmowajSoAgCwAgA&sourceid=chrome&ie=UTF-8">
-                    Google</a>
+                <a target="_blank" href="https://www.google.com.br/?hl=pt-BR">
+                    <img src="imagens/afiliados/google.png" alt="Logo da GOOGLE"></a>
             </div>
             <div class="empresa_afiliada">
                 <a target="_blank" href="https://www.ibm.com/br-pt">
-                    IBM</a>
+                    <img src="imagens/afiliados/ibm.png" alt="Logo da IBM"></a>
             </div>
             <div class="empresa_afiliada">
                 <a target="_blank" href="https://www.jpmorgan.com.br/pt/about-us">
-                    JPMorgan</a>
+                    <img src="imagens/afiliados/jp_morgan.png" alt="Logo da JP Morgan"></a>
             </div>
             <div class="empresa_afiliada">
-                <a target="#" href="#">Datacenter</a>
+                <a target="_blank" href="https://www.cisco.com/c/pt_br/index.html">
+                    <img src="imagens/afiliados/cisco.png" alt="Logo da Cisco"></a>
             </div>
             <div class="empresa_afiliada">
                 <a target="_blank" href="https://www.dell.com/pt-br">
-                    Dell</a>
+                    <img src="imagens/afiliados/dell.png" alt="Logo da Dell"></a>
             </div>
         </div>
 
@@ -171,7 +226,7 @@
             </div>
 
             <div class="nossos_contatos">
-                <p>Email: consultoriaprotech@gmail.com</p>
+                <p>E-mail: consultoriaprotech@gmail.com</p>
             </div>
 
             <div class="nossos_contatos">
