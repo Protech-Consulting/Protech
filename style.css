@@ -96,7 +96,7 @@ dialog#dialog_contato menu {
     margin: 15px auto;
 }
 
-dialog#dialog_contato menu button {
+#cancelar, #confirmar {
     margin: 0 10px;
     font-size: 1.2em;
     padding: 5px;
