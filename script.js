@@ -35,7 +35,6 @@ botaoCancelar.addEventListener("click", function () {
 });
 botaoConfirmar.addEventListener("click", function () {
     
-// https://github.com/github/fetch
 fetch("https://formsubmit.co/ajax/gugaben28@gmail.com", {
     method: "POST",
     headers: { 
@@ -44,7 +43,7 @@ fetch("https://formsubmit.co/ajax/gugaben28@gmail.com", {
     },
     body: JSON.stringify({
         Rua: rua.innerText,
-        Bairro: bairro.innerText, // pra que serve isso tudo?
+        Bairro: bairro.innerText,
         Cidade: cidade.innerText,
         Estado: estado.innerText 
     })
