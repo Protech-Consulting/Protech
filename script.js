@@ -42,7 +42,7 @@ botaoCancelar.addEventListener("click", function () {
 botaoConfirmar.addEventListener("click", function () {
     
 
-fetch("https://formsubmit.co/ajax/c7b114120c276af9575414a9d94a78ba", {
+fetch("https://formsubmit.co/ajax/leonardo.constantino@uni9.edu.br", {
     method: "POST",
     headers: { 
         'Content-Type': 'application/json',
@@ -59,6 +59,6 @@ fetch("https://formsubmit.co/ajax/c7b114120c276af9575414a9d94a78ba", {
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.log(error));
-    alert(rua.innerText)
+    alert("Enviado!")
         
 });
