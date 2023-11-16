@@ -35,7 +35,7 @@ botaoCancelar.addEventListener("click", function () {
 });
 botaoConfirmar.addEventListener("click", function () {
     
-fetch("https://formsubmit.co/ajax/gugaben28@gmail.com", {
+fetch("https://formsubmit.co/ajax/c7b114120c276af9575414a9d94a78ba", {
     method: "POST",
     headers: { 
         'Content-Type': 'application/json',
