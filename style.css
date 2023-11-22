@@ -97,6 +97,8 @@ section#insira_as_informacoes h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.9em;
     margin-bottom: 15px;
+    /* Provisório para responsividade: */
+    text-align: center;
 }
 
 div.informacoes_do_usuario {
@@ -165,7 +167,7 @@ dialog#dialog_contato menu {
 
 #cancelar {
     background-color: #f54842;
-    transition: transform 0.15s;
+    transition: transform 0.1s;
 }
 
 #cancelar:hover {
@@ -176,7 +178,7 @@ dialog#dialog_contato menu {
 
 #confirmar {
     background-color: #42f54b;
-    transition: transform 0.15s;
+    transition: transform 0.1s;
 }
 
 #confirmar:hover {
@@ -195,8 +197,17 @@ dialog#dialog_contato menu {
 }
 
 #botao_contato_dialog {
-    padding: 10px;
-    font-size: 1.35em;
+    padding: 18px 22px;
+    font-size: 1.45em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border: 2px solid black;
+}
+
+#botao_contato_dialog:hover {
+    cursor: pointer;
+    background-color: #19cce0;
+    transform: scale(1.06);
 }
 
 
