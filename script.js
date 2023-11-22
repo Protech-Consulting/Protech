@@ -2,7 +2,7 @@ var entreEmContato = document.getElementById("botao_contato_dialog");
 var botaoCancelar = document.getElementById("cancelar");
 botaoConfirmar = document.getElementById("confirmar")
 var dialog_contato = document.getElementById("dialog_contato");
-var botao_cep = document.getElementById("botao_cep");
+var botao_checar_cep = document.getElementById("botao_checar_cep");
 
 var nome = document.querySelector("#nome_para_contato");
 var rua = document.getElementById("label_rua");
@@ -15,7 +15,9 @@ var estado = document.getElementById("label_estado");
 entreEmContato.addEventListener("click", function () {
     dialog_contato.showModal();
 });
-botao_cep.addEventListener("click", function () {
+
+
+botao_checar_cep.addEventListener("click", function () {
     let cep_usuario = document.getElementById("cep_usuario") // Cep Digitado pelo usuário
     let url = `https://viacep.com.br/ws/${cep_usuario.value}/json/` // Valida o CEP digitado
     fetch(url)
@@ -31,6 +33,7 @@ botao_cep.addEventListener("click", function () {
     });
 });
 
+
 // O botão 'botaocancelar' fecha a Dialog
 botaoCancelar.addEventListener("click", function () {
     dialog_contato.close();
@@ -39,9 +42,10 @@ botaoCancelar.addEventListener("click", function () {
     cidade.innerText = ""
     estado.innerText = ""
 });
+
+
 botaoConfirmar.addEventListener("click", function () {
     
-
 fetch("https://formsubmit.co/ajax/c7b114120c276af9575414a9d94a78ba", {
     method: "POST",
     headers: { 
@@ -60,5 +64,4 @@ fetch("https://formsubmit.co/ajax/c7b114120c276af9575414a9d94a78ba", {
     .then(data => console.log(data))
     .catch(error => console.log(error));
     alert("Enviado!")
-        
 });

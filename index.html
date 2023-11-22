@@ -31,28 +31,34 @@
     <div id="contato">
         <dialog id="dialog_contato">
             <form method="post">
-                <section>
-                    <p>
-                        <label>Insira as informações a seguir:</label>
-                        <input type="text" id="nome_para_contato" placeholder="Digite seu nome">
-                        <input type="text" placeholder="Digite seu CEP" id="cep_usuario">
-                        <input type="button" value="Checar" id="botao_cep">
+                <section id="insira_as_informacoes">
+                    <h2>Insira as informações a seguir:</h2>
+                    <div class="informacoes_do_usuario">
+                        <label id="label_nome_para_contato" for="nome_para_contato">Digite seu nome</label>
+                        <input type="text" id="nome_para_contato" placeholder="Ex: Pedro Silva" autofocus>
+                    </div>
+                    <div class="informacoes_do_usuario">
+                        <label id="label_cep_usuario" for="cep_usuario">Digite seu CEP</label>
+                        <input type="text" id="cep_usuario" placeholder="Ex: 05001-900" value="05001-900">
+                    </div>
+                    <input type="button" value="Checar" id="botao_checar_cep">
+                    <div id="label_cep_detalhado">
                         <label id="label_rua">Rua: </label>
                         <label id="label_bairro">Bairro: </label>
                         <label id="label_cidade">Cidade: </label>
                         <label id="label_estado">Estado: </label>
-                    </p>
+                    </div>
                 </section>
                 <menu>
                     <button id="cancelar" type="reset">Cancelar</button>
                     <input type="button" id="confirmar" value="Confirmar">
                 </menu>
             </form>
-          </dialog>
-          
-          <menu>
+        </dialog>
+
+        <menu>
             <button id="botao_contato_dialog">Contato</button>
-          </menu>
+        </menu>
     </div>
 
     <section class="topico">

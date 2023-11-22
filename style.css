@@ -72,25 +72,65 @@ header a.links:hover {
 
 /* Entre em Contato */
 dialog#dialog_contato {
-    width: 50%;
+    width: 60vw;
     margin: 10% auto;
-    height: 30vw;
-    
+    height: 70vh;
+    background: linear-gradient(155deg, #2a517e, #4971A6 40%);
 }
 
 dialog#dialog_contato form {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(148, 185, 233);
-    /* Provisório: */
-    padding-top: 35px;
+    padding: 25px;
 }
 
-dialog#dialog_contato p {
+section#insira_as_informacoes {
     color: black;
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
+
+section#insira_as_informacoes h2{
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.9em;
+    margin-bottom: 15px;
+}
+
+div.informacoes_do_usuario {
+    display: flex;
+    flex-direction: column;
+}
+
+label#label_nome_para_contato, label#label_cep_usuario {
+    margin: 5px;
+    font-size: 1.15em;
+}
+
+input#nome_para_contato, input#cep_usuario {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    padding: 5px 8px;
+    width: 50vw;
+}
+
+input#botao_checar_cep {
+    padding: 5px 10px;
+    background-color: rgb(129, 129, 197);
+    border: none;
+    font-size: 1.2em;
+}
+
+input#botao_checar_cep:hover {
+    cursor: pointer;
+    background-color: rgb(145, 145, 209);
+}
+
+div#label_cep_detalhado {
+
+}
+
 
 dialog#dialog_contato menu {
     margin: 15px auto;
@@ -102,6 +142,8 @@ dialog#dialog_contato menu {
     padding: 5px;
 }
 
+
+/* Botão 'Contato' */
 #contato {
     position: fixed;
     bottom: 60px;
@@ -113,6 +155,8 @@ dialog#dialog_contato menu {
     padding: 10px;
     font-size: 1.2em;
 }
+
+
 
 /* Estilização dos Tópicos (conteúdo da página) */
 .topico {
