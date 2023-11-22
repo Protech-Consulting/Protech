@@ -74,7 +74,7 @@ header a.links:hover {
 dialog#dialog_contato {
     width: 60vw;
     margin: 10% auto;
-    height: 70vh;
+    height: 490px;
     background: linear-gradient(155deg, #2a517e, #4971A6 40%);
 }
 
@@ -91,8 +91,9 @@ section#insira_as_informacoes {
     flex-direction: column;
 }
 
-section#insira_as_informacoes h2{
-    color: rgb(0, 0, 0);
+section#insira_as_informacoes h2 {
+    color: #F2F2F2;
+    text-shadow: 1px 1px 4px black;
     font-family: 'Roboto', sans-serif;
     font-size: 1.9em;
     margin-bottom: 15px;
@@ -105,7 +106,9 @@ div.informacoes_do_usuario {
 
 label#label_nome_para_contato, label#label_cep_usuario {
     margin: 5px;
-    font-size: 1.15em;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 input#nome_para_contato, input#cep_usuario {
@@ -117,29 +120,69 @@ input#nome_para_contato, input#cep_usuario {
 
 input#botao_checar_cep {
     padding: 5px 10px;
-    background-color: rgb(129, 129, 197);
+    background-color: #8181c5;
     border: none;
     font-size: 1.2em;
+    margin-bottom: 8px;
 }
 
 input#botao_checar_cep:hover {
     cursor: pointer;
-    background-color: rgb(145, 145, 209);
+    background-color: #7979ba;
 }
 
 div#label_cep_detalhado {
-
+    padding-top: 3px;
+    display: flex;
+    flex-direction: column;
+    height: 125px;
 }
 
+#label_cep_detalhado label {
+    margin-bottom: 6px;
+    font-size: 1.35em;
+}
+
+#label_cep_detalhado label:hover {
+    cursor: text;
+}
 
 dialog#dialog_contato menu {
-    margin: 15px auto;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 #cancelar, #confirmar {
-    margin: 0 10px;
-    font-size: 1.2em;
-    padding: 5px;
+    margin: 0;
+    font-size: 1.8em;
+    padding: 8px 14px;
+    background-color: #f54842;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+#cancelar {
+    background-color: #f54842;
+    transition: transform 0.15s;
+}
+
+#cancelar:hover {
+    background-color: #d33d38;
+    cursor: pointer;
+    transform: scale(0.975);
+} 
+
+#confirmar {
+    background-color: #42f54b;
+    transition: transform 0.15s;
+}
+
+#confirmar:hover {
+    background-color: #37c23e;
+    cursor: pointer;
+    transform: scale(0.975);
 }
 
 
@@ -153,7 +196,7 @@ dialog#dialog_contato menu {
 
 #botao_contato_dialog {
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 1.35em;
 }
 
 

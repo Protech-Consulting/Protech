@@ -18,17 +18,17 @@ entreEmContato.addEventListener("click", function () {
 
 
 botao_checar_cep.addEventListener("click", function () {
-    let cep_usuario = document.getElementById("cep_usuario") // Cep Digitado pelo usuário
-    let url = `https://viacep.com.br/ws/${cep_usuario.value}/json/` // Valida o CEP digitado
+    let cep_usuario = document.getElementById("cep_usuario"); // Cep Digitado pelo usuário
+    let url = `https://viacep.com.br/ws/${cep_usuario.value}/json/`; // Valida o CEP digitado
     fetch(url)
     .then(function (response) { // fetch é . . .
         response.json() // json é . . .
         .then(function (data) {
-            rua.innerText = data.logradouro
-            bairro.innerText = data.bairro
-            cidade.innerText = data.localidade
-            estado.innerText = data.uf
-            console.log(data)
+            rua.innerText = data.logradouro;
+            bairro.innerText = data.bairro;
+            cidade.innerText = data.localidade;
+            estado.innerText = data.uf;
+            console.log(data);
         });
     });
 });
@@ -37,10 +37,10 @@ botao_checar_cep.addEventListener("click", function () {
 // O botão 'botaocancelar' fecha a Dialog
 botaoCancelar.addEventListener("click", function () {
     dialog_contato.close();
-    rua.innerText = ""
-    bairro.innerText = ""
-    cidade.innerText = ""
-    estado.innerText = ""
+    rua.innerText = "";
+    bairro.innerText = "";
+    cidade.innerText = "";
+    estado.innerText = "";
 });
 
 
@@ -57,11 +57,11 @@ fetch("https://formsubmit.co/ajax/c7b114120c276af9575414a9d94a78ba", {
         Rua: rua.innerText,
         Bairro: bairro.innerText,
         Cidade: cidade.innerText,
-        Estado: estado.innerText 
+        Estado: estado.innerText
     })
 })
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.log(error));
-    alert("Enviado!")
+    alert("Endereço enviado!!");
 });
