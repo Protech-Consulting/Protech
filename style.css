@@ -97,7 +97,6 @@ section#insira_as_informacoes h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.9em;
     margin-bottom: 15px;
-    /* Provisório para responsividade: */
     text-align: center;
 }
 
@@ -418,6 +417,33 @@ footer .nossos_contatos p {
         padding: 10px 0;
     }
 
+    /* Contato */
+
+    section#insira_as_informacoes h2 {
+        font-size: 1.75em;
+    }
+
+    label#label_nome_para_contato, label#label_cep_usuario {
+        font-size: 1em;
+    }
+
+    input#nome_para_contato, input#cep_usuario {
+        font-size: 1.1em;
+    }
+
+    #label_cep_detalhado label {
+        font-size: 1.45em;
+    }
+
+    dialog#dialog_contato menu {
+        padding-top: 16px;
+    }
+
+    #cancelar, #confirmar {
+        font-size: 1.6em;
+    }
+
+
     /* Integrantes */
     #equipe div.funcionarios {
         /* margin: 15px 10px; */
@@ -454,6 +480,12 @@ footer .nossos_contatos p {
         max-width: 90%;
     }
 
+
+    /* Contato */
+
+    dialog#dialog_contato {
+        width: 80vw;
+    }
 
     /* Integrantes */
 
@@ -492,6 +524,32 @@ header a.links {
     margin: 0 12px;
 }
 
+/* Contato */
+
+section#insira_as_informacoes h2 {
+    font-size: 1.55em;
+}
+
+label#label_nome_para_contato, label#label_cep_usuario {
+    font-size: 0.95em;
+}
+
+input#nome_para_contato, input#cep_usuario {
+    font-size: 1em;
+}
+
+#label_cep_detalhado label {
+    font-size: 1.3em;
+}
+
+dialog#dialog_contato menu {
+    padding-top: 16px;
+}
+
+#cancelar, #confirmar {
+    font-size: 1.4em;
+}
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -514,6 +572,21 @@ header a.links {
         font-size: 1.2em;
     }
 
+    /* Contato */
+
+    section#insira_as_informacoes h2 {
+        font-size: 1.33em;
+    }
+
+    dialog#dialog_contato menu {
+        padding-top: 25px;
+    }
+
+    #cancelar, #confirmar {
+        font-size: 1.2em;
+    }
+
+
     footer div#afiliados {
         width: 60%;
     }
@@ -529,6 +602,36 @@ header a.links {
         margin: 0 6px;
         padding: 15px 0;
         font-size: 1em;
+    }
+
+    /* Contato */
+
+    dialog#dialog_contato form {
+        padding: 25px 10px;
+    }
+
+    section#insira_as_informacoes h2 {
+        font-size: 1.1em;
+    }
+
+    label#label_nome_para_contato, label#label_cep_usuario {
+        font-size: 0.95em;
+    }
+
+    input#nome_para_contato, input#cep_usuario {
+        font-size: 1em;
+    }
+
+    #label_cep_detalhado label {
+        font-size: 1.3em;
+    }
+
+    dialog#dialog_contato menu {
+        padding-top: 25px;
+    }
+
+    #cancelar, #confirmar {
+        font-size: 1.2em;
     }
 
 }
