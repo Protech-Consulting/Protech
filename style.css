@@ -254,6 +254,14 @@ dialog#dialog_contato menu {
 }
 
 
+/* Estilização do Tópico 'Equipamentos' */
+div #video_arduino iframe{
+    width: 60vw;
+    height: 60vh;
+    border-radius: 8px;
+}
+
+
 
 /* Estilização do Tópico 'Integrantes' */
 #integrantes img {
