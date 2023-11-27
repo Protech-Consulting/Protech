@@ -295,35 +295,36 @@ div #video_arduino iframe {
 
 #equipe div.funcionarios {
     margin: 15px 10px;
-    background-color: rgba(255, 0, 0, 0.7);
     height: 245px;
     width: 380px;
+    background-color: rgba(255, 0, 0, 0.7);
     border: solid 3px #cdcdcd;
     text-align: center; /* Em caso de não haver imagem, o alt aparece no meio*/
 }
 
 .funcionarios .imagem_integrantes {
-    height: 200px;
+    height: 80%;
 }
 
 .imagem_integrantes img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: -0 0px;
+    object-position: -0 0; /* Centraliza as imagens */
 }
 
 .funcionarios .nome_integrantes {
+    height: 20%;
     background-color: #2a517e;
-    height: 41px;
-    display: flex;
     border-top: solid 3px #cdcdcdaf;
+    display: flex;
+    align-items: center;
 }
 
 .nome_integrantes p {
-    font-size: 1.5em;
+    font-size: 1.45em;
     font-family: 'Noto Serif Balinese', serif;
-
+    padding-top: 8px; /* Padding para centralizar com a fonte que puxa pra cima (os dev da fonte fizeram assim) */
 }
 
 .nome_gerente p {
@@ -457,17 +458,11 @@ footer .nossos_contatos p {
 
     /* Integrantes */
     #equipe div.funcionarios {
-        /* margin: 15px 10px; */
         height: 200px;
         width: 321px;
     }
     
-    .funcionarios .imagem_integrantes {
-        height: 160px;
-    }
-    
     .funcionarios .nome_integrantes {
-        height: 35px;
         font-size: 0.8em;
     }
 
@@ -505,23 +500,13 @@ footer .nossos_contatos p {
 
     /* Integrantes */
 
-    #integrantes img {
-        object-position: 0;
-    }
-
     #equipe div.funcionarios {
-        /* margin: 15px 10px; */
         height: 270px;
         width: 450px;
     }
     
-    .funcionarios .imagem_integrantes {
-        height: 225px;
-    }
-    
     .funcionarios .nome_integrantes {
-        height: 40px;
-        font-size: 0.9em;
+        font-size: 1em;
     }
     
     /* Footer */
