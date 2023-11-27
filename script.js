@@ -1,6 +1,6 @@
 var entreEmContato = document.getElementById("botao_contato_dialog");
 var botaoCancelar = document.getElementById("cancelar");
-botaoConfirmar = document.getElementById("confirmar")
+var botaoConfirmar = document.getElementById("confirmar")
 var dialog_contato = document.getElementById("dialog_contato");
 var botao_checar_cep = document.getElementById("botao_checar_cep");
 
@@ -21,16 +21,16 @@ botao_checar_cep.addEventListener("click", function () {
     let cep_usuario = document.getElementById("cep_usuario"); // Cep Digitado pelo usuário
     let url = `https://viacep.com.br/ws/${cep_usuario.value}/json/`; // Valida o CEP digitado
     fetch(url)
-    .then(function (response) { // fetch é . . .
-        response.json() // json é . . .
-        .then(function (data) {
-            rua.innerText = data.logradouro;
-            bairro.innerText = data.bairro;
-            cidade.innerText = data.localidade;
-            estado.innerText = data.uf;
-            console.log(data);
+        .then(function (response) { // fetch é . . .
+            response.json() // json é . . .
+                .then(function (data) {
+                    rua.innerText = data.logradouro;
+                    bairro.innerText = data.bairro;
+                    cidade.innerText = data.localidade;
+                    estado.innerText = data.uf;
+                    console.log(data);
+                });
         });
-    });
 });
 
 
@@ -44,24 +44,25 @@ botaoCancelar.addEventListener("click", function () {
 });
 
 
+// Botão CONFIRMAR
 botaoConfirmar.addEventListener("click", function () {
-    
-fetch("https://formsubmit.co/ajax/c7b114120c276af9575414a9d94a78ba", {
-    method: "POST",
-    headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-    },
-    body: JSON.stringify({
-        Nome: nome.value,
-        Rua: rua.innerText,
-        Bairro: bairro.innerText,
-        Cidade: cidade.innerText,
-        Estado: estado.innerText
+    fetch("https://formsubmit.co/ajax/c7b114120c276af9575414a9d94a78ba", {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            Nome: nome.value,
+            Rua: rua.innerText,
+            Bairro: bairro.innerText,
+            Cidade: cidade.innerText,
+            Estado: estado.innerText
+        })
     })
-})
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.log(error));
-    alert("Endereço enviado!!");
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.log(error));
+    alert("Informações Enviadas com Sucesso!");
+    dialog_contato.close();
 });

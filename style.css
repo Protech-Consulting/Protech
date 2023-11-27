@@ -255,7 +255,7 @@ dialog#dialog_contato menu {
 
 
 /* Estilização do Tópico 'Equipamentos' */
-div #video_arduino iframe{
+div #video_arduino iframe {
     width: 60vw;
     height: 60vh;
     border-radius: 8px;
@@ -493,6 +493,11 @@ footer .nossos_contatos p {
 
     dialog#dialog_contato {
         width: 80vw;
+    }
+
+    /* Equipamentos */
+    div #video_arduino iframe {
+        width: 85vw;
     }
 
     /* Integrantes */
