@@ -235,7 +235,14 @@ dialog#dialog_contato menu {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     bottom: 0px;
-    
+    letter-spacing: 2px; /* Espaçamento entre as letras */
+    font-family: 'Merriweather', serif;
+}
+
+h1#protech_consulting {
+    letter-spacing: 1px;
+    font-size: 1.85em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.75);
 }
 
 .descricao {
@@ -308,14 +315,15 @@ div #video_arduino iframe {
 
 .funcionarios .nome_integrantes {
     background-color: #2a517e;
-    height: 40px;
+    height: 41px;
     display: flex;
-    align-items: center;
     border-top: solid 3px #cdcdcdaf;
 }
 
 .nome_integrantes p {
-    font-size: 1.8em;
+    font-size: 1.5em;
+    font-family: 'Noto Serif Balinese', serif;
+
 }
 
 .nome_gerente p {
@@ -339,8 +347,11 @@ footer div#afiliados {
 }
 
 footer div#afiliados h2 {
-    font-size: 2rem;
-    font-family: 'Young Serif', serif
+    font-size: 2.6em;
+    color: #F2F2F2;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 6px;
+    text-shadow: 2px 2px 1px rgba(141, 141, 141, 0.65);
 }
 
 footer #campo_empresas_afiliadas {
@@ -362,9 +373,6 @@ footer #campo_empresas_afiliadas {
 
 .empresa_afiliada img {
     transition: 0.15s;
-}
-
-.empresa_afiliada img {
     width: 90%;
 }
 
@@ -373,11 +381,6 @@ footer #campo_empresas_afiliadas {
     transform: scale(1.15);
     transition: 0.25s;
 }
-
-#afiliados h2 {
-    color: #F2F2F2;
-}
-
 
 /* Estilização do 'Entre em contato!' (ainda no footer) */
 footer #entre_em_contato {
