@@ -75,7 +75,7 @@ dialog#dialog_contato {
     width: 60vw;
     margin: 10% auto;
     height: 490px;
-    background: linear-gradient(155deg, #2a517e, #4971A6 40%);
+    background: linear-gradient(155deg, #2a517e, #4971A6 75%);
 }
 
 dialog#dialog_contato form {
@@ -93,7 +93,7 @@ section#insira_as_informacoes {
 
 section#insira_as_informacoes h2 {
     color: #F2F2F2;
-    text-shadow: 1px 1px 4px black;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.85);
     font-family: 'Roboto', sans-serif;
     font-size: 1.9em;
     margin-bottom: 15px;
@@ -141,7 +141,10 @@ div#label_cep_detalhado {
 
 #label_cep_detalhado label {
     margin-bottom: 6px;
-    font-size: 1.35em;
+    font-size: 1.08em;
+    font-Family: 'Merriweather', serif;
+    color: #F2F2F2;
+    text-shadow: 2px 2px 3px black;
 }
 
 #label_cep_detalhado label:hover {
@@ -162,6 +165,7 @@ dialog#dialog_contato menu {
     background-color: #f54842;
     border: 2px solid;
     border-radius: 10px;
+    box-shadow: 1px 1px 3px 1px;
 }
 
 #cancelar {
@@ -237,6 +241,8 @@ dialog#dialog_contato menu {
     bottom: 0px;
     letter-spacing: 2px; /* Espaçamento entre as letras */
     font-family: 'Merriweather', serif;
+    text-shadow: 2px 2px 3px black;
+    font-size: 1.2em;
 }
 
 h1#protech_consulting {
