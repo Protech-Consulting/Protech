@@ -265,6 +265,34 @@ h1#protech_consulting {
     margin: 5px 0;
 }
 
+/* Estilização de 'Serviços' */
+
+#sub_titulo {
+    /* background-color: red; */
+    margin: 20px 0 8px;
+    font-size: 1.4em;
+    font-family: 'Merriweather', serif;
+}
+
+#descricao_ilustrada {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    padding: 10px 0;
+    /* background-color: lightgreen; */
+}
+
+#descricao_ilustrada img{
+    width: 350px;
+}
+
+.negrito {
+    background-color: #1f3d5f;
+    font-size: 1.2em;
+    padding: 3px 0;
+}
+
+
 
 /* Estilização do Tópico 'Equipamentos' */
 div #video_arduino iframe {
