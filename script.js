@@ -23,7 +23,7 @@ entreEmContato.addEventListener("click", function () {
 // Botão CHECAR
 botao_checar_cep.addEventListener("click", function () {
     cep_usuario = document.getElementById("cep_usuario"); // Cep Digitado pelo usuário
-    if(cep_usuario.value == "") {
+    if (cep_usuario.value == "") {
         rua.innerHTML = "Insira um CEP válido!";
         rua.style.color = "#fc2b2b";
         rua.style.fontSize = "1.45em";
@@ -67,7 +67,7 @@ botaoCancelar.addEventListener("click", function () {
 
 // Botão CONFIRMAR
 botaoConfirmar.addEventListener("click", function () {
-    if(nome.value == "" || cep_usuario.value == "") { // Validação para ver se o usuário não deixou nada em branco
+    if (nome.value == "" || cep_usuario.value == "") { // Validação para ver se o usuário não deixou nada em branco
         alert("Por favor, insira as informações corretamente!");
         return;
     }

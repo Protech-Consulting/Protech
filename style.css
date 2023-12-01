@@ -104,14 +104,16 @@ div.informacoes_do_usuario {
     flex-direction: column;
 }
 
-label#label_nome_para_contato, label#label_cep_usuario {
+label#label_nome_para_contato,
+label#label_cep_usuario {
     margin: 5px;
     font-size: 1.1em;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
 
-input#nome_para_contato, input#cep_usuario {
+input#nome_para_contato,
+input#cep_usuario {
     font-size: 1.2em;
     margin-bottom: 20px;
     padding: 5px 8px;
@@ -157,7 +159,8 @@ dialog#dialog_contato menu {
     justify-content: space-around;
 }
 
-#cancelar, #confirmar {
+#cancelar,
+#confirmar {
     margin: 0;
     font-size: 1.8em;
     padding: 8px 14px;
@@ -176,7 +179,7 @@ dialog#dialog_contato menu {
     background-color: #d33d38;
     cursor: pointer;
     transform: scale(0.975);
-} 
+}
 
 #confirmar {
     background-color: #42f54b;
@@ -238,7 +241,8 @@ dialog#dialog_contato menu {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     bottom: 0px;
-    letter-spacing: 2px; /* Espaçamento entre as letras */
+    letter-spacing: 2px;
+    /* Espaçamento entre as letras */
     font-family: 'Merriweather', serif;
     text-shadow: 2px 2px 3px black;
     font-size: 1.2em;
@@ -332,7 +336,8 @@ div #video_arduino iframe {
     width: 380px;
     background-color: rgba(255, 0, 0, 0.7);
     border: solid 3px #cdcdcd;
-    text-align: center; /* Em caso de não haver imagem, o alt aparece no meio*/
+    text-align: center;
+    /* Em caso de não haver imagem, o alt aparece no meio*/
 }
 
 .funcionarios .imagem_integrantes {
@@ -343,7 +348,8 @@ div #video_arduino iframe {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: -0 0; /* Centraliza as imagens */
+    object-position: -0 0;
+    /* Centraliza as imagens */
 }
 
 .funcionarios .nome_integrantes {
@@ -357,7 +363,8 @@ div #video_arduino iframe {
 .nome_integrantes p {
     font-size: 1.45em;
     font-family: 'Noto Serif Balinese', serif;
-    padding-top: 8px; /* Padding para centralizar com a fonte que puxa pra cima (os dev da fonte fizeram assim) */
+    padding-top: 8px;
+    /* Padding para centralizar com a fonte que puxa pra cima (os dev da fonte fizeram assim) */
 }
 
 .nome_gerente p {
@@ -486,11 +493,13 @@ footer .nossos_contatos p {
         font-size: 1.75em;
     }
 
-    label#label_nome_para_contato, label#label_cep_usuario {
+    label#label_nome_para_contato,
+    label#label_cep_usuario {
         font-size: 1em;
     }
 
-    input#nome_para_contato, input#cep_usuario {
+    input#nome_para_contato,
+    input#cep_usuario {
         font-size: 1.1em;
     }
 
@@ -502,7 +511,8 @@ footer .nossos_contatos p {
         padding-top: 16px;
     }
 
-    #cancelar, #confirmar {
+    #cancelar,
+    #confirmar {
         font-size: 1.6em;
     }
 
@@ -512,7 +522,7 @@ footer .nossos_contatos p {
         height: 200px;
         width: 321px;
     }
-    
+
     .funcionarios .nome_integrantes {
         font-size: 0.8em;
     }
@@ -561,16 +571,16 @@ footer .nossos_contatos p {
         height: 270px;
         width: 450px;
     }
-    
+
     .funcionarios .nome_integrantes {
         font-size: 1em;
     }
-    
+
     /* Footer */
     footer div#afiliados {
         width: 60%;
     }
-    
+
     footer div#afiliados h2 {
         font-size: 2.2em;
     }
@@ -578,35 +588,38 @@ footer .nossos_contatos p {
 
 @media only screen and (max-width: 600px) {
 
-header a.links {
-    margin: 0 12px;
-}
+    header a.links {
+        margin: 0 12px;
+    }
 
-/* Contato */
+    /* Contato */
 
-section#insira_as_informacoes h2 {
-    font-size: 1.55em;
-}
+    section#insira_as_informacoes h2 {
+        font-size: 1.55em;
+    }
 
-label#label_nome_para_contato, label#label_cep_usuario {
-    font-size: 0.95em;
-}
+    label#label_nome_para_contato,
+    label#label_cep_usuario {
+        font-size: 0.95em;
+    }
 
-input#nome_para_contato, input#cep_usuario {
-    font-size: 1em;
-}
+    input#nome_para_contato,
+    input#cep_usuario {
+        font-size: 1em;
+    }
 
-#label_cep_detalhado label {
-    font-size: 1.3em;
-}
+    #label_cep_detalhado label {
+        font-size: 1.3em;
+    }
 
-dialog#dialog_contato menu {
-    padding-top: 16px;
-}
+    dialog#dialog_contato menu {
+        padding-top: 16px;
+    }
 
-#cancelar, #confirmar {
-    font-size: 1.4em;
-}
+    #cancelar,
+    #confirmar {
+        font-size: 1.4em;
+    }
 
 }
 
@@ -640,7 +653,8 @@ dialog#dialog_contato menu {
         padding-top: 25px;
     }
 
-    #cancelar, #confirmar {
+    #cancelar,
+    #confirmar {
         font-size: 1.2em;
     }
 
@@ -672,11 +686,13 @@ dialog#dialog_contato menu {
         font-size: 1.1em;
     }
 
-    label#label_nome_para_contato, label#label_cep_usuario {
+    label#label_nome_para_contato,
+    label#label_cep_usuario {
         font-size: 0.95em;
     }
 
-    input#nome_para_contato, input#cep_usuario {
+    input#nome_para_contato,
+    input#cep_usuario {
         font-size: 1em;
     }
 
@@ -688,7 +704,8 @@ dialog#dialog_contato menu {
         padding-top: 25px;
     }
 
-    #cancelar, #confirmar {
+    #cancelar,
+    #confirmar {
         font-size: 1.2em;
     }
 
