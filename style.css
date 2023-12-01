@@ -268,7 +268,6 @@ h1#protech_consulting {
 /* Estilização de 'Serviços' */
 
 #sub_titulo {
-    /* background-color: red; */
     margin: 20px 0 8px;
     font-size: 1.4em;
     font-family: 'Merriweather', serif;
@@ -279,17 +278,18 @@ h1#protech_consulting {
     align-items: center;
     gap: 0 30px;
     padding: 10px 0;
-    /* background-color: lightgreen; */
 }
 
-#descricao_ilustrada img{
-    width: 350px;
+#descricao_ilustrada img {
+    max-width: 350px;
 }
 
 .negrito {
     background-color: #1f3d5f;
     font-size: 1.2em;
     padding: 3px 0;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 
@@ -443,6 +443,24 @@ footer .nossos_contatos p {
 
 
 /* Estilização para Responsividade da página */
+@media only screen and (max-width: 1120px) {
+
+    /* Estilização de 'Serviços' */
+    #sub_titulo {
+        margin: 20px 0 0;
+    }
+
+    #descricao_ilustrada {
+        flex-direction: column;
+    }
+
+    #descricao_ilustrada img {
+        margin-top: 5px;
+        max-width: 60%;
+        min-width: 350px;
+    }
+}
+
 @media only screen and (max-width: 890px) {
 
     header img#logo_menu {
@@ -524,6 +542,12 @@ footer .nossos_contatos p {
 
     dialog#dialog_contato {
         width: 80vw;
+    }
+
+
+    /* Estilização de 'Serviços' */
+    #descricao_ilustrada img {
+        min-width: 275px;
     }
 
     /* Equipamentos */
