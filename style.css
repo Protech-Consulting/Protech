@@ -308,7 +308,7 @@ div#opcoes_videos_arduinos {
 div#opcoes_videos_arduinos button {
     margin: 0;
     background-color: #f54842;
-    border: solid 2px black;
+    border: none;
     box-shadow: 2px 2px 4px;
     font-size: 1.5em;
     padding: 6px 10px;

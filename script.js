@@ -100,7 +100,7 @@ botaoConfirmar.addEventListener("click", function() {
 // Vídeos do Arduíno
 let botaoVideo1 = document.querySelector("#botao_video_arduino_1");
 let botaoVideo2 = document.querySelector("#botao_video_arduino_2");
-let videoSelecionado = document.querySelector("#video_arduino_selecionado");
+let videoSelecionado = document.querySelector("#video_arduino_selecionado iframe");
 let descricaoArduino = document.querySelector("#descricao_video_arduino");
 
 let video1 = document.querySelector("#video1");
@@ -116,13 +116,19 @@ botaoVideo1.onclick = function() {
     video2.style.display = "none";
     descricaoArduino.innerHTML = `*Esta é uma explicação sobre o Arduino que utilizaremos em nossa empresa.
     Ele estará localizado na parte dos servidores e será utilizado para detectar fumaça em caso de ocorrer alguma anormalidade.`;
+
+    // Reseta o URL do vídeo 2 para dar pause ao trocar para o vídeo 1 (para não ter 2 vídeos tocando ao mesmo tempo)
+    video2.innerHTML = `<iframe src="https://www.youtube.com/embed/XaTdmGmThFs?si=spPD8RPbDlWU0hMS" title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen></iframe>`;
 }
 
 botaoVideo2.onclick = function() {
     botaoVideo1.style.border = "none";
     botaoVideo2.style.border = "2px solid #eeeb";
     video1.style.display = "none";
-    video2.style.display = "block"
+    video2.style.display = "block";
     descricaoArduino.innerHTML = `*Este Arduino possui a funcionalidade de um alarme,
     que será ativado caso detecte algum movimento na área onde está instalado.`;
+
+    // Reseta o URL do vídeo 1 para dar pause ao trocar para o vídeo 2 (para não ter 2 vídeos tocando ao mesmo tempo)
+    video1.innerHTML = `<iframe src="https://www.youtube.com/embed/58iP6QddGxM?si=dk1QCQvIq1_4b0lc" title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen></iframe>`;
 }
