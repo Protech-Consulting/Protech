@@ -1,3 +1,5 @@
+// Campo 'CONTATO'
+
 var entreEmContato = document.getElementById("botao_contato_dialog");
 var dialog_contato = document.getElementById("dialog_contato");
 
@@ -15,13 +17,13 @@ var estado = document.getElementById("label_estado");
 
 
 // A var 'entreEmContato' abre uma Dialog (quase como um pop-up)
-entreEmContato.addEventListener("click", function () {
+entreEmContato.addEventListener("click", function() {
     dialog_contato.showModal();
 });
 
 
 // Botão CHECAR
-botao_checar_cep.addEventListener("click", function () {
+botao_checar_cep.addEventListener("click", function() {
     cep_usuario = document.getElementById("cep_usuario"); // Cep Digitado pelo usuário
     if (cep_usuario.value == "") {
         rua.innerHTML = "Insira um CEP válido!";
@@ -56,7 +58,7 @@ botao_checar_cep.addEventListener("click", function () {
 
 
 // O botão 'botaocancelar' fecha a Dialog
-botaoCancelar.addEventListener("click", function () {
+botaoCancelar.addEventListener("click", function() {
     dialog_contato.close();
     rua.innerText = "";
     bairro.innerText = "";
@@ -66,7 +68,7 @@ botaoCancelar.addEventListener("click", function () {
 
 
 // Botão CONFIRMAR
-botaoConfirmar.addEventListener("click", function () {
+botaoConfirmar.addEventListener("click", function() {
     if (nome.value == "" || cep_usuario.value == "") { // Validação para ver se o usuário não deixou nada em branco
         alert("Por favor, insira as informações corretamente!");
         return;
@@ -92,3 +94,18 @@ botaoConfirmar.addEventListener("click", function () {
     alert("Informações Enviadas com Sucesso!");
     dialog_contato.close();
 });
+
+
+
+// Vídeos do Arduíno
+let video1 = document.querySelector("#video_arduino_1");
+let video2 = document.querySelector("#video_arduino_2");
+let videoSelecionado = document.querySelector("#video_arduino_selecionado");
+
+video1.onclick = function() {
+    videoSelecionado.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/58iP6QddGxM?si=SMe7kSK8YI_WD93K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+}
+
+video2.onclick = function() {
+    videoSelecionado.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/dwp57Xr0o_4?si=DhRJ2Ma17EwfhMA5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+}
