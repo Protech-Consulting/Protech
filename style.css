@@ -299,7 +299,7 @@ h1#protech_consulting {
 
 
 /* Estilização do Tópico 'Equipamentos' */
-div #video_arduino_selecionado iframe {
+div .video_arduino_selecionado iframe {
     width: 60vw;
     height: 60vh;
     border-radius: 8px;
@@ -561,7 +561,7 @@ footer .nossos_contatos p {
     }
 
     /* Equipamentos */
-    div #video_arduino_selecionado iframe {
+    div .video_arduino_selecionado iframe {
         width: 85vw;
     }
 

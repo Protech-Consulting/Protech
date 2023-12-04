@@ -98,14 +98,25 @@ botaoConfirmar.addEventListener("click", function() {
 
 
 // Vídeos do Arduíno
-let video1 = document.querySelector("#video_arduino_1");
-let video2 = document.querySelector("#video_arduino_2");
+let botaoVideo1 = document.querySelector("#botao_video_arduino_1");
+let botaoVideo2 = document.querySelector("#botao_video_arduino_2");
 let videoSelecionado = document.querySelector("#video_arduino_selecionado");
+let descricaoArduino = document.querySelector("#descricao_video_arduino");
 
-video1.onclick = function() {
-    videoSelecionado.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/58iP6QddGxM?si=SMe7kSK8YI_WD93K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+let video1 = document.querySelector("#video1");
+let video2 = document.querySelector("#video2");
+video2.style.display = "none";
+
+botaoVideo1.onclick = function() {
+    video1.style.display = "block";
+    video2.style.display = "none";
+    descricaoArduino.innerHTML = `*Esta é uma explicação sobre o Arduino que utilizaremos em nossa empresa.
+    Ele estará localizado na parte dos servidores e será utilizado para detectar fumaça em caso de ocorrer alguma anormalidade.`
 }
 
-video2.onclick = function() {
-    videoSelecionado.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/dwp57Xr0o_4?si=DhRJ2Ma17EwfhMA5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+botaoVideo2.onclick = function() {
+    video1.style.display = "none";
+    video2.style.display = "block"
+    descricaoArduino.innerHTML = `*Este Arduino possui a funcionalidade de um alarme,
+    que será ativado caso detecte algum movimento na área onde está instalado.`
 }
