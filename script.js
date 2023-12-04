@@ -105,18 +105,24 @@ let descricaoArduino = document.querySelector("#descricao_video_arduino");
 
 let video1 = document.querySelector("#video1");
 let video2 = document.querySelector("#video2");
+
+botaoVideo1.style.border = "2px solid #eeeb";
 video2.style.display = "none";
 
 botaoVideo1.onclick = function() {
+    botaoVideo1.style.border = "2px solid #eeeb";
+    botaoVideo2.style.border = "none";
     video1.style.display = "block";
     video2.style.display = "none";
     descricaoArduino.innerHTML = `*Esta é uma explicação sobre o Arduino que utilizaremos em nossa empresa.
-    Ele estará localizado na parte dos servidores e será utilizado para detectar fumaça em caso de ocorrer alguma anormalidade.`
+    Ele estará localizado na parte dos servidores e será utilizado para detectar fumaça em caso de ocorrer alguma anormalidade.`;
 }
 
 botaoVideo2.onclick = function() {
+    botaoVideo1.style.border = "none";
+    botaoVideo2.style.border = "2px solid #eeeb";
     video1.style.display = "none";
     video2.style.display = "block"
     descricaoArduino.innerHTML = `*Este Arduino possui a funcionalidade de um alarme,
-    que será ativado caso detecte algum movimento na área onde está instalado.`
+    que será ativado caso detecte algum movimento na área onde está instalado.`;
 }

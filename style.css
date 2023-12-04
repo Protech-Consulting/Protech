@@ -299,8 +299,31 @@ h1#protech_consulting {
 
 
 /* Estilização do Tópico 'Equipamentos' */
+div#opcoes_videos_arduinos {
+    /* background-color: rgba(0, 255, 21, 0.445); */
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+div#opcoes_videos_arduinos button {
+    background-color: #f54842;
+    border: solid 2px black;
+    box-shadow: 2px 2px 4px;
+    font-size: 1.5em;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.1s;
+}
+
+div#opcoes_videos_arduinos button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 div .video_arduino_selecionado iframe {
-    width: 60vw;
+    width: 56vw;
     height: 60vh;
     border-radius: 8px;
 }
@@ -562,7 +585,7 @@ footer .nossos_contatos p {
 
     /* Equipamentos */
     div .video_arduino_selecionado iframe {
-        width: 85vw;
+        width: 82vw;
     }
 
     /* Integrantes */
