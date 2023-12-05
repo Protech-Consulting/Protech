@@ -87,7 +87,8 @@ div#caixa_links_responsivos ul {
     display: none;
 }
 
-/* Entre em Contato */
+
+/* Dialog da caixinha 'contato' */
 dialog#dialog_contato {
     width: 60vw;
     margin: 10% auto;
@@ -211,7 +212,7 @@ dialog#dialog_contato menu {
 }
 
 
-/* Botão 'Contato' */
+/* Caixinha 'Contato' */
 #contato {
     position: fixed;
     bottom: 60px;
@@ -287,8 +288,9 @@ h1#protech_consulting {
     margin: 5px 0;
 }
 
-/* Estilização de 'Serviços' */
 
+
+/* Estilização do Tópico 'Serviços' */
 #sub_titulo {
     margin: 20px 0 8px;
     font-size: 1.4em;
@@ -378,7 +380,7 @@ div .video_arduino_selecionado iframe {
     background-color: rgba(255, 0, 0, 0.7);
     border: solid 3px #cdcdcd;
     text-align: center;
-    /* Em caso de não haver imagem, o alt aparece no meio*/
+    /* Com text-align: center; em caso de não haver imagem, o alt aparece no meio*/
 }
 
 .funcionarios .imagem_integrantes {
@@ -389,8 +391,8 @@ div .video_arduino_selecionado iframe {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: -0 0;
-    /* Centraliza as imagens */
+    object-position: 0 0;
+    /* Centraliza as imagens, 0% a direita (não muda nada), e 0% para baixo (100% para cima). */
 }
 
 .funcionarios .nome_integrantes {
@@ -405,7 +407,7 @@ div .video_arduino_selecionado iframe {
     font-size: 1.45em;
     font-family: 'Noto Serif Balinese', serif;
     padding-top: 8px;
-    /* Padding para centralizar com a fonte que puxa pra cima (os dev da fonte fizeram assim) */
+    /* Padding para centralizar com a fonte que puxa pra cima (os dev da fonte fizeram ela flutuando levemente) */
 }
 
 .nome_gerente p {
@@ -464,6 +466,7 @@ footer #campo_empresas_afiliadas {
     transition: 0.25s;
 }
 
+
 /* Estilização do 'Entre em contato!' (ainda no footer) */
 footer #entre_em_contato {
     margin-top: 80px;
@@ -487,8 +490,11 @@ footer .nossos_contatos p {
 }
 
 
+
+/* Ajustes na responsividade do site, isto é, em dispositivos com tamanhos de telas menores */
 @media only screen and (max-width: 1200px) {
 
+    /* Menu */
     nav img#logo_menu {
         width: 130px;
     }
@@ -501,6 +507,7 @@ footer .nossos_contatos p {
 /* Estilização para Responsividade da página */
 @media only screen and (max-width: 1120px) {
 
+    /* Menu */
     div#caixa_links_responsivos ul {
         list-style: none;
         gap: 15px 0;
@@ -536,6 +543,7 @@ footer .nossos_contatos p {
         margin: 0;
     }
 
+
     /* Estilização de 'Serviços' */
     #sub_titulo {
         margin: 20px 0 0;
@@ -561,7 +569,6 @@ footer .nossos_contatos p {
 @media only screen and (max-width: 865px) {
 
     /* Contato */
-
     section#insira_as_informacoes h2 {
         font-size: 1.75em;
     }
@@ -595,6 +602,7 @@ footer .nossos_contatos p {
         font-size: 1.2em;
     }
 
+
     /* Integrantes */
     #equipe div.funcionarios {
         height: 200px;
@@ -605,8 +613,8 @@ footer .nossos_contatos p {
         font-size: 0.8em;
     }
 
-    /* Footer */
 
+    /* Footer */
     .empresa_afiliada {
         width: 50%;
     }
@@ -615,6 +623,7 @@ footer .nossos_contatos p {
 
 @media only screen and (max-width: 740px) {
 
+    /* "Geral" */
     body {
         background-size: 50%;
     }
@@ -623,12 +632,14 @@ footer .nossos_contatos p {
         max-width: 90%;
     }
 
+
+    /* Menu */
     div#caixa_links_responsivos .links {
         font-size: 1em;
     }
 
-    /* Contato */
 
+    /* Contato */
     dialog#dialog_contato {
         width: 80vw;
     }
@@ -639,14 +650,15 @@ footer .nossos_contatos p {
         min-width: 275px;
     }
 
+
     /* Equipamentos */
     div .video_arduino_selecionado iframe {
         width: 82vw;
         height: 45vh;
     }
 
-    /* Integrantes */
 
+    /* Integrantes */
     #equipe div.funcionarios {
         height: 270px;
         width: 450px;
@@ -655,6 +667,7 @@ footer .nossos_contatos p {
     .funcionarios .nome_integrantes {
         font-size: 1em;
     }
+
 
     /* Footer */
     footer div#afiliados {
@@ -669,7 +682,6 @@ footer .nossos_contatos p {
 @media only screen and (max-width: 600px) {
 
     /* Contato */
-
     section#insira_as_informacoes h2 {
         font-size: 1.55em;
     }
@@ -697,11 +709,12 @@ footer .nossos_contatos p {
         font-size: 1.4em;
     }
 
-    /* Equipamentos */
 
+    /* Equipamentos */
     div .video_arduino_selecionado iframe {
         height: 40vh;
     }
+
 
     /* Footer */
     .empresa_afiliada {
@@ -712,6 +725,7 @@ footer .nossos_contatos p {
 
 @media only screen and (max-width: 500px) {
 
+    /* Menu */
     #menu_hamburguer img {
         margin: 8px 8px 0 0;
         width: 40px;
@@ -720,6 +734,7 @@ footer .nossos_contatos p {
     div#caixa_links_responsivos .links {
         font-size: 0.9em;
     }
+
 
     /* Contato */
     section#insira_as_informacoes h2 {
@@ -761,7 +776,6 @@ footer .nossos_contatos p {
 @media only screen and (max-width: 440px) {
 
     /* Contato */
-
     dialog#dialog_contato form {
         padding: 25px 10px;
     }
@@ -792,5 +806,4 @@ footer .nossos_contatos p {
     #confirmar {
         font-size: 1.2em;
     }
-
 }

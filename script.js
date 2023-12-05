@@ -1,4 +1,4 @@
-// Campo 'CONTATO'
+// Javascript do campo 'CONTATO' e seu dialog
 
 var entreEmContato = document.getElementById("botao_contato_dialog");
 var dialog_contato = document.getElementById("dialog_contato");
@@ -96,6 +96,9 @@ botaoConfirmar.addEventListener("click", function() {
 });
 
 
+
+
+
 // Botão hamburguer do menu
 let menuHamburguer = document.querySelector("#menu_hamburguer");
 let caixaLinksResponsivos = document.querySelector("#caixa_links_responsivos");
@@ -113,12 +116,6 @@ menuHamburguer.onclick = function() {
 
 
 
-
-
-
-
-
-// ESPAÇO TIRA ISSO DEPOIS
 
 
 // Vídeos do Arduíno
