@@ -96,6 +96,29 @@ botaoConfirmar.addEventListener("click", function() {
 });
 
 
+// Botão hamburguer do menu
+let menuHamburguer = document.querySelector("#menu_hamburguer");
+let caixaLinksResponsivos = document.querySelector("#caixa_links_responsivos");
+
+menuHamburguer.onclick = function() {
+    if(caixaLinksResponsivos.style.display === "none") {
+        caixaLinksResponsivos.style.display = "block";
+    }
+    else {
+        caixaLinksResponsivos.style.display = "none";
+    }
+}
+
+
+
+
+
+
+
+
+
+// ESPAÇO TIRA ISSO DEPOIS
+
 
 // Vídeos do Arduíno
 let botaoVideo1 = document.querySelector("#botao_video_arduino_1");
