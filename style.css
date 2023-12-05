@@ -448,7 +448,7 @@ footer #campo_empresas_afiliadas {
 
 .empresa_afiliada {
     margin: 20px auto;
-    width: 280px;
+    width: 33.3%;
     text-align: center;
     display: flex;
 }
@@ -550,6 +550,12 @@ footer .nossos_contatos p {
         max-width: 60%;
         min-width: 350px;
     }
+
+    /* Equipamentos */
+    div .video_arduino_selecionado iframe {
+        height: 50vh;
+    }
+
 }
 
 @media only screen and (max-width: 865px) {
@@ -589,7 +595,6 @@ footer .nossos_contatos p {
         font-size: 1.2em;
     }
 
-
     /* Integrantes */
     #equipe div.funcionarios {
         height: 200px;
@@ -598,6 +603,12 @@ footer .nossos_contatos p {
 
     .funcionarios .nome_integrantes {
         font-size: 0.8em;
+    }
+
+    /* Footer */
+
+    .empresa_afiliada {
+        width: 50%;
     }
 
 }
@@ -631,6 +642,7 @@ footer .nossos_contatos p {
     /* Equipamentos */
     div .video_arduino_selecionado iframe {
         width: 82vw;
+        height: 45vh;
     }
 
     /* Integrantes */
@@ -683,6 +695,17 @@ footer .nossos_contatos p {
     #cancelar,
     #confirmar {
         font-size: 1.4em;
+    }
+
+    /* Equipamentos */
+
+    div .video_arduino_selecionado iframe {
+        height: 40vh;
+    }
+
+    /* Footer */
+    .empresa_afiliada {
+        width: 250px;
     }
 
 }
