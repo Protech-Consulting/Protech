@@ -30,37 +30,43 @@ header {
     top: 0;
     position: sticky;
     z-index: 1;
+}
+
+nav {
     background: linear-gradient(15deg, #10243b 35%, #1f3d5f);
     display: flex;
     padding: 15px 10px;
     box-shadow: 0 0 10px;
 }
 
-header div#caixa_logo {
+nav div#caixa_logo {
     margin: 0;
 }
 
-header img#logo_menu {
+nav img#logo_menu {
     width: 150px;
 }
 
-header div#caixa_links {
+nav div#caixa_links {
     margin: 0 0 0 auto;
-    display: flex;
-    align-items: flex-start;
     padding-top: 5px;
 }
 
-header a.links {
+nav div#caixa_links ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a.links {
     margin: 0 35px;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.25em;
+    font-size: 1.1em;
     text-decoration: none;
     color: #F2F2F2;
     transition: transform 0.25s;
 }
 
-header a.links:hover {
+nav a.links:hover {
     cursor: pointer;
     text-decoration: underline;
     transform: scale(1.15);
@@ -469,11 +475,27 @@ footer .nossos_contatos p {
 }
 
 
+@media only screen and (max-width: 1200px) {
 
+    nav img#logo_menu {
+        width: 130px;
+    }
 
+    nav a.links {
+        font-size: 1em;
+    }
+}
 
 /* Estilização para Responsividade da página */
 @media only screen and (max-width: 1120px) {
+
+    nav img#logo_menu {
+        display: none;
+    }
+
+    nav div#caixa_links {
+        margin: 0 12px;
+    }
 
     /* Estilização de 'Serviços' */
     #sub_titulo {
@@ -491,21 +513,13 @@ footer .nossos_contatos p {
     }
 }
 
-@media only screen and (max-width: 890px) {
-
-    header img#logo_menu {
-        width: 100px;
-    }
-
-}
-
 @media only screen and (max-width: 865px) {
 
-    header img#logo_menu {
+    nav img#logo_menu {
         display: none;
     }
 
-    header div#caixa_links {
+    nav div#caixa_links {
         margin: 0 auto;
         padding: 10px 0;
     }
@@ -564,14 +578,6 @@ footer .nossos_contatos p {
         background-size: 50%;
     }
 
-    header img {
-        display: none;
-    }
-
-    header a.links {
-        margin: 0 20px;
-    }
-
     .descricao {
         max-width: 90%;
     }
@@ -617,10 +623,6 @@ footer .nossos_contatos p {
 
 @media only screen and (max-width: 600px) {
 
-    header a.links {
-        margin: 0 12px;
-    }
-
     /* Contato */
 
     section#insira_as_informacoes h2 {
@@ -653,24 +655,6 @@ footer .nossos_contatos p {
 }
 
 @media only screen and (max-width: 500px) {
-
-    header {
-        padding: 0;
-    }
-
-    header {
-        max-width: 100%;
-        border-radius: 0px;
-        border: 0;
-        box-shadow: 0px 3px 10px;
-    }
-
-    header a.links {
-        margin: 0 6px;
-        text-decoration: underline;
-        padding: 15px 0px;
-        font-size: 1.2em;
-    }
 
     /* Contato */
 
@@ -711,12 +695,6 @@ footer .nossos_contatos p {
 }
 
 @media only screen and (max-width: 440px) {
-
-    header a.links {
-        margin: 0 6px;
-        padding: 15px 0;
-        font-size: 1em;
-    }
 
     /* Contato */
 
