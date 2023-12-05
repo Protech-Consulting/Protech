@@ -25,7 +25,7 @@ entreEmContato.addEventListener("click", function() {
 // Botão CHECAR
 botao_checar_cep.addEventListener("click", function() {
     cep_usuario = document.getElementById("cep_usuario"); // Cep Digitado pelo usuário
-    if (cep_usuario.value == "") {
+    if (cep_usuario.value == "" || cep_usuario.value.length != 8) {
         rua.innerHTML = "Insira um CEP válido!";
         rua.style.color = "#fc2b2b";
         rua.style.fontSize = "1.45em";
