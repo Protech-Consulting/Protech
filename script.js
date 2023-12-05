@@ -43,9 +43,9 @@ botao_checar_cep.addEventListener("click", function() {
     }
 
     let url = `https://viacep.com.br/ws/${cep_usuario.value}/json/`; // Valida o CEP digitado
-    fetch(url)
-        .then(function (response) { // fetch é . . .
-            response.json() // json é . . .
+    fetch(url) // fetch é uma requisição para algum arquivo ou url. Ele retorna com uma promisse, que seria uma 'response'.
+        .then(function (response) { // O response é convertido para 'json' para implementar no Javascript
+            response.json()
                 .then(function (data) {
                     rua.innerText = data.logradouro;
                     bairro.innerText = data.bairro;
