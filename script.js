@@ -101,14 +101,15 @@ let menuHamburguer = document.querySelector("#menu_hamburguer");
 let caixaLinksResponsivos = document.querySelector("#caixa_links_responsivos");
 
 menuHamburguer.onclick = function() {
-    if(caixaLinksResponsivos.style.display === "none") {
-        caixaLinksResponsivos.style.display = "block";
+    if(caixaLinksResponsivos.style.display === "block") {
+        caixaLinksResponsivos.style.display = "none";
+        menuHamburguer.innerHTML = "<img src='imagens/menu_abrir.png' alt='Barrinha para abrir a navegação do menu'>"
     }
     else {
-        caixaLinksResponsivos.style.display = "none";
+        caixaLinksResponsivos.style.display = "block";
+        menuHamburguer.innerHTML = "<img src='imagens/menu_fechar.png' alt='Barrinha para fechar a navegação do menu'>"
     }
 }
-
 
 
 

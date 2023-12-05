@@ -80,18 +80,7 @@ div#caixa_links_responsivos {
 }
 
 div#caixa_links_responsivos ul {
-    list-style: none;
-    gap: 10px 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-#ultimo_elemento_link {
-    grid-column: 2/3;
-}
-
-div#caixa_links_responsivos .links {
-    /* border: 1px solid #eee8; */
+    display: none;
 }
 
 #menu_hamburguer {
@@ -512,15 +501,39 @@ footer .nossos_contatos p {
 /* Estilização para Responsividade da página */
 @media only screen and (max-width: 1120px) {
 
-    nav #menu_hamburguer {
-        display: block;
-        background-color: red;
-        margin: 0;
+    div#caixa_links_responsivos ul {
+        list-style: none;
+        gap: 15px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #ultimo_elemento_link {
+        grid-column: 2/3;
     }
 
-    nav div#caixa_links {
-        margin: 0 12px;
+    #menu_hamburguer {
+        display: grid;
+        margin: 0 20px 0;
+        height: 50px;
+    }
+
+    #menu_hamburguer img {
+        color: white;
+        width: 50px;
+    }
+
+    #menu_hamburguer img:hover {
+        cursor: pointer;
+    }
+
+    div#caixa_links {
         display: none;
+    }
+
+    #caixa_links_responsivos .links {
+        text-decoration: underline;
+        margin: 0;
     }
 
     /* Estilização de 'Serviços' */
@@ -599,6 +612,9 @@ footer .nossos_contatos p {
         max-width: 90%;
     }
 
+    div#caixa_links_responsivos .links {
+        font-size: 1em;
+    }
 
     /* Contato */
 
@@ -673,8 +689,16 @@ footer .nossos_contatos p {
 
 @media only screen and (max-width: 500px) {
 
-    /* Contato */
+    #menu_hamburguer img {
+        margin: 8px 8px 0 0;
+        width: 40px;
+    }
 
+    div#caixa_links_responsivos .links {
+        font-size: 0.9em;
+    }
+
+    /* Contato */
     section#insira_as_informacoes h2 {
         font-size: 1.33em;
     }
